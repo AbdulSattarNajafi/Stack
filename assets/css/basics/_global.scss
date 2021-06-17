@@ -1,0 +1,64 @@
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+  font-size: 1.125rem;
+  font-family: 'Quicksand', sans-serif;
+  color: $black;
+  line-height: 180%;
+}
+// .container{
+//   border: 1px solid blue;
+// }
+h2{
+  font-size: 3rem;
+  font-weight: bold;
+  color: $headings-color;
+  line-height: 60px;
+}
+
+h4{
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.orange-text{
+  color: $orange;
+}
+.stackbutler-text{
+  color: $tackbutler-paars;
+}
+.orange-btn-lg{
+  border: none;
+  outline: none;
+  background-color: $orange;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: $white;
+  line-height: 25px;
+  border-radius: 15px;
+  padding: 10px 49px;
+}

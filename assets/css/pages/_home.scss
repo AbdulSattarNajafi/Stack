@@ -1,0 +1,315 @@
+// Styling for Hero Section
+#hero-section{
+  padding: 2.5rem 0;
+  padding-bottom: 8rem;
+
+  .hero-texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 1rem;
+    padding-right: 1.1rem;
+
+    h1{
+      text-transform: capitalize;
+      font-size: 3.5rem;
+      color: $headings-color;
+      font-weight: bold;
+      line-height: 70px;
+      margin-bottom: 20px;
+    }
+
+    p{
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: $paragraphs-color;
+      line-height: 160%;
+    }
+
+    .search-container{
+      position: relative;
+      margin-top: 1rem;
+
+      input{
+        position: relative;
+        width: 96%;
+        padding: 1rem 0;
+        padding-right: 5rem;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid $headings-color;
+        font-size: 20px;
+        color: $paragraphs-color;
+        line-height: 25px;
+
+        &::placeholder{
+          color: $paragraphs-color;
+        }
+
+      }
+
+      button{
+        position: absolute;
+        right: 1.3rem;
+        bottom: 3px;
+        outline: none;
+        border: none;
+        height: 58px;
+        width: 58px;
+        background-color: $orange;
+        border-radius: 50%;
+        font-size: 28px;
+        font-weight: 100;
+        color: $white;
+      }
+
+    }
+
+  }
+
+  .hero-image{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+}
+@media (max-width: 991.98px) {
+  #hero-section{
+    padding-bottom: 5rem;
+
+    .hero-texts{
+      padding-right: 3rem;
+    }
+
+    .hero-image{
+      padding-top: 3rem;
+      justify-content: center;
+    }
+
+  }
+}
+@media (max-width: 767.98px) {
+  #hero-section{
+
+    .hero-texts{
+      padding-right: .75rem;
+    }
+
+  }
+}
+//End OF Hero section
+
+//Styling for mostUsed Section
+#mostused{
+  background-color: $blue-100;
+  padding: 4rem 0;
+
+  #tabs-container{
+    padding: 5.4rem 0 0 0;
+
+    .heading{
+      position: relative;
+      margin-bottom: 36px;
+
+      img{
+        position: absolute;
+        left: -3.3rem;
+        top: -3.7rem;
+        max-width: 90%;
+        height: auto;
+      }
+
+      h2{
+        position: relative;
+        z-index: 10;
+      }
+
+    }
+
+    #tabs-btns-container{
+      display: grid;
+      grid-column-gap: 12px;
+      grid-row-gap: 14px;
+      grid-template-columns: repeat(auto-fit, minmax(160px, max-content));
+      grid-auto-rows: auto;
+
+      .tabs-btn{
+        width: 100%;
+        padding: .8rem 1.2rem;
+        background-color: $white;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: all .4s ease;
+        &:hover{
+          background-color: $lichtpaars;
+          .img-container .bg-img{
+            display: block;
+          }
+        }
+
+        .img-container{
+          position: relative;
+
+          .bg-img{
+            display: none;
+            position: absolute;
+            left: -.6rem;
+            top: -.2rem;
+            transition: all .4s ease;
+            z-index: 1;
+          }
+
+          .icon-img{
+            position: relative;
+            z-index: 4;
+          }
+
+        }
+
+        h4{
+          margin: 2px 0;
+        }
+
+        p{
+          font-size: .875rem;
+          line-height: 18px;
+          font-weight: 600;
+          margin: 0;
+        }
+
+      }
+
+      .active-tab{
+        background-color: $lichtpaars;
+        .img-container .bg-img{
+          display: block;
+        }
+      }
+
+    }
+
+  }
+
+  #software-result{
+    padding-right: 0;
+    .tabs-content{
+      display: none;
+      .developers-result{
+        display: grid;
+        grid-column-gap: 22px;
+        grid-row-gap: 25px;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 180px));
+        grid-auto-rows: auto;
+        justify-content: end;
+      }
+
+      .all-links-container{
+        text-align: center;
+        margin-top: .8rem;
+        padding-left: 3.6rem;
+
+        a{
+          font-size: 1.125rem;
+          color: $tackbutler-paars;
+          font-weight: 500;
+          line-height: 25px;
+
+          span i{
+            font-size: 1rem;
+          }
+
+        }
+
+      }
+
+    }
+
+    .active-content{
+      display: block;
+    }
+
+  }
+
+}
+
+@media (max-width: 991.98px) {
+
+  #mostused{
+
+    #tabs-btns-container{
+      justify-content: center;
+    }
+
+    #software-result{
+      padding: 0;
+      padding-top: 3rem;
+
+      .tabs-content{
+
+        .developers-result{
+          justify-content: center;
+        }
+
+        .all-links-container{
+          padding-left: 0;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+// End of mostUsed Section
+
+//Styling for Software Section
+#software{
+  padding: 10rem 0;
+
+  .software-row{
+    display: flex;
+    align-items: center;
+
+    .software-desc{
+      padding-left: 2rem;
+
+      .heading-container{
+        position: relative;
+  
+        .background-img{
+          position: absolute;
+          left: -4.1rem;
+          top: -1.3rem;
+          display: flex;
+          z-index: -1;
+
+          img{
+            margin-right: 1.4rem;
+          }
+
+        }
+  
+      }
+
+    }
+
+  }
+
+}
+@media (max-width: 991.98px) {
+  #software{
+    padding: 6rem 0;
+
+    .software-row{
+
+      .software-desc{
+        padding: 0;
+        padding-top: 3rem;
+      }
+
+    }
+
+  }
+}
+// end Of Software Section

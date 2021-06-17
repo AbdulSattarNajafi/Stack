@@ -1,0 +1,18 @@
+// Importing the Sass components
+
+// 1 Helpers
+@import './helpers/variables';
+@import './helpers/mixins';
+
+// 2 Basics
+@import './basics/global';
+
+// 3 Layouts
+@import './layouts/header';
+@import './layouts/footer';
+
+// 4 Modules
+@import './modules/component';
+
+// 5 pages
+@import './pages/home';

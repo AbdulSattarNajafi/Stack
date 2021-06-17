@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google fonts link -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap link -->
+  <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.min.css">
+
+  <!-- FontAwesome link -->
+  <link rel="stylesheet" href="./vendors/fontawesome/css/all.css">
+
+  <!-- Custom CSS link -->
+  <link rel="stylesheet" href="./assets/css/app.css">
+  <title>Home</title>
+</head>
+<body>
+  
+  <!-- Start of Header -->
+  <header class="page-header">
+    <div class="container p-0">
+      <nav class="top-header">
+
+        <div class="toggle-menu-container">
+          <button type="button" id="opne-menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div id="tablet-logo">
+          <a href="#">Stack Butler</a>
+        </div>
+
+          <ul class="nav-list">
+            <li class="logo-container">
+              <a href="#" class="logo">Stack Butler</a>
+              <button type="button" id="close-menu"><i class="fas fa-times"></i></button>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Software</a></li>
+          </ul>
+
+        <div class="login-container">
+          <button type="button" class="orange-btn-lg">Sign in</button>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+  <!-- End of Header -->
+
+  <!-- Overlay -->
+  <div id="menu-overlay"></div>
+  <div id="login-overlay"></div>
+  <div class="scroll-up-container">
+    <a href="#" id="scroll-up-btn">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+  </div>
+  <!-- Overlay -->
+
+  <!-- Start of Hero Section -->
+  <div class="container" id="hero-section">
+    <div class="row">
+
+      <div class="col-lg-6 hero-texts">
+        <h1>Serving you <br>the <span class="stackbutler-text">best software</span> <br> you can get</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        <div class="search-container">
+          <input type="text" name="search" id="search" placeholder="Search Products">
+          <button><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+
+      <div class="col-lg-6 hero-image">
+        <img class="img-fluid" src="./assets/images/penguin.png" alt="image">
+      </div>
+
+    </div>
+  </div>
+  <!-- End of Hero Section -->
+
+  <!-- Start of Mostused Section -->
+  <section id="mostused">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-5 col-md-12" id="tabs-container">
+          
+          <div class="heading">
+            <img src="./assets/images/logo-bg.png" alt="image">
+            <h2>Most used by:</h2>
+          </div>
+
+          <div id="tabs-btns-container">
+
+            <!-- Tabs button 1 -->
+            <div class="tabs-btn active-tab" data-id="developers">
+              <div class="img-container">
+                <img class="bg-img" src="./assets/images/tabs-active-bg.png" alt="image">
+                <img class="icon-img" src="./assets/images/Developer.png" alt="image">
+              </div>
+              <h4>Developers</h4>
+              <p>All your favorite <br> developer tools.</p>
+            </div>
+
+            <!-- Tabs button 2 -->
+            <div class="tabs-btn" data-id="marketers">
+              <div class="img-container">
+                <img class="bg-img" src="./assets/images/tabs-active-bg.png" alt="image">
+                <img class="icon-img" src="./assets/images/Web-Advertising.png" alt="image">
+              </div>
+              <h4>Marketeers</h4>
+              <p>All your favorite <br> marketing tools.</p>
+            </div>
+
+            <!-- Tabs button 3 -->
+            <div class="tabs-btn" data-id="designers">
+              <div class="img-container">
+                <img class="bg-img" src="./assets/images/tabs-active-bg.png" alt="image">
+                <img class="icon-img" src="./assets/images/Wacom-Tablet.png" alt="image">
+              </div>
+              <h4>Designers</h4>
+              <p>All your favorite <br> designing tools.</p>
+            </div>
+
+            <!-- Tabs button 4 -->
+            <div class="tabs-btn" data-id="managers">
+              <div class="img-container">
+                <img class="bg-img" src="./assets/images/tabs-active-bg.png" alt="image">
+                <img class="icon-img" src="./assets/images/Customer-Insights-Manager.png" alt="image">
+              </div>
+              <h4>Managers</h4>
+              <p>All your favorite <br> manager tools.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-7 col-md-12" id="software-result">
+
+          <!-- Developers -->
+          <div class="tabs-content developers active-content" data-id="developers">
+            <div class="developers-result">
+
+              <!-- Card 1 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 7 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 8 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 9 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+            </div>
+            
+            <div class="all-links-container">
+              <a href="#">
+                See all Developer Software 
+                <span><i class="fas fa-chevron-right"></i></span>
+              </a>
+            </div>
+
+          </div>
+          <!-- End Of Developers -->
+
+          <!-- Marketers -->
+          <div class="tabs-content marketers" data-id="marketers">
+            <div class="developers-result">
+
+              <!-- Card 1 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 7 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 8 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 9 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+            </div>
+            
+            <div class="all-links-container">
+              <a href="#">
+                See all Marketing Software
+                <span><i class="fas fa-chevron-right"></i></span>
+              </a>
+            </div>
+
+          </div>
+          <!-- End Of Marketers -->
+
+          <!-- Designers -->
+          <div class="tabs-content designers" data-id="designers">
+            <div class="developers-result">
+
+              <!-- Card 1 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 7 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 8 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 9 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+            </div>
+            
+            <div class="all-links-container">
+              <a href="#">
+                See all Designing Software
+                <span><i class="fas fa-chevron-right"></i></span>
+              </a>
+            </div>
+
+          </div>
+          <!-- End Of Designers -->
+
+          <!-- Managers -->
+          <div class="tabs-content managers" data-id="managers">
+            <div class="developers-result">
+
+              <!-- Card 1 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 7 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 8 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+              <!-- Card 9 -->
+              <div class="result-cards">
+                <img src="./assets/images/Asana_logo.png" alt="image">
+                <h6>4.9</h6>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="reviews">10 reviews</p>
+                <p class="orange-text">Asana</p>
+              </div>
+
+            </div>
+            
+            <div class="all-links-container">
+              <a href="#">
+                See all Manager Software
+                <span><i class="fas fa-chevron-right"></i></span>
+              </a>
+            </div>
+
+          </div>
+          <!-- End Of Managers -->
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End of Mostused Section -->
+  <!-- Start of Software Section -->
+  <section id="software">
+    <div class="container">
+      <div class="row software-row">
+        <div class="col-lg-5 p-0">
+          <img class="img-fluid" src="./assets/images/undraw_review-2.png" alt="image">
+        </div>
+        <div class="col-lg-5 software-desc">
+
+          <div class="heading-container">
+            <div class="background-img">
+              <img class="img-fluid" src="./assets/images/star-bg.png" alt="image">
+              <img class="img-fluid" src="./assets/images/star-bg.png" alt="image">
+            </div>
+            <h2>Using software? <br>Write a review</h2>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="btn-container">
+            <button class="orange-btn-lg">Write a review</button>
+          </div>
+
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Software Section -->
+
+  <!-- Start of Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6" id="footer-logo-container">
+          <img src="./assets/images/logo-bg.png" alt="">
+          <h2>Stack Butler</h2>
+          <h2 class="orange-text">Keep in touch</h2>
+        </div>
+
+        <div class="col-lg-6" id="footer-links-container">
+
+          <div class="footer-links-container mmm">
+            <div class="links-title">
+              <p>Categories</p>
+              <button type="button" class="show-footer-links">
+                <span class="show"><i class="fas fa-plus"></i></span>
+                <span class="hide"><i class="fas fa-minus"></i></span>
+              </button>
+            </div>
+            
+            <ul>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Analytics</a></li>
+              <li><a href="#">Commerce</a></li>
+              <li><a href="#">Insights</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-container mmm">
+            <div class="links-title">
+              <p>Support</p>
+              <button type="button" class="show-footer-links">
+                <span class="show"><i class="fas fa-plus"></i></span>
+                <span class="hide"><i class="fas fa-minus"></i></span>
+              </button>
+            </div>
+            
+            <ul>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Guides</a></li>
+              <li><a href="#">API Status</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-container mmm">
+            <div class="links-title">
+              <p>Company</p>
+              <button type="button" class="show-footer-links">
+                <span class="show"><i class="fas fa-plus"></i></span>
+                <span class="hide"><i class="fas fa-minus"></i></span>
+              </button>
+            </div>
+            
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Partners</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-12" id="social-icons-container">
+          <ul class="social-icons-linkslist">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <!-- End of Footer -->
+
+  <!-- Bootstrap JS file -->
+  <script src="./vendors/bootstrap/js/bootstrap.bundle.js"></script>
+
+  <!-- App JS file -->
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
