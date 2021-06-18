@@ -171,3 +171,15 @@ footer{
 
   }
 }
+
+@media (max-width: 575.98px) {
+  footer{
+    padding: 4.125rem 0 2rem 0;
+
+    #footer-links-container{
+      padding-top: 0;
+    }
+    // #footer-logo-container{}
+
+  }
+}

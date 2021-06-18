@@ -22,6 +22,18 @@ body {
   line-height: 180%;
 }
 
+.row {
+  width: 100%;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: #414548;
+  font-weight: bold;
+  line-height: 70px;
+}
+
 h2 {
   font-size: 3rem;
   font-weight: bold;
@@ -63,6 +75,20 @@ ul {
   line-height: 25px;
   border-radius: 15px;
   padding: 10px 49px;
+}
+
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 60px;
+  }
+  h2 {
+    font-size: 2.4rem;
+    line-height: 40px;
+  }
+  .orange-btn-lg {
+    padding: 5px 20px;
+  }
 }
 
 header {
@@ -226,6 +252,12 @@ header .top-header .nav-list .logo-container #close-menu {
             transform: translate(0%);
     -webkit-transition: all .6s ease;
     transition: all .6s ease;
+  }
+}
+
+@media (max-width: 575.98px) {
+  header .top-header #tablet-logo a {
+    font-size: 1.6rem;
   }
 }
 
@@ -401,6 +433,15 @@ footer #social-icons-container .social-icons-linkslist li a {
   }
 }
 
+@media (max-width: 575.98px) {
+  footer {
+    padding: 4.125rem 0 2rem 0;
+  }
+  footer #footer-links-container {
+    padding-top: 0;
+  }
+}
+
 .result-cards {
   background-color: #fff;
   border-radius: 15px;
@@ -465,6 +506,15 @@ footer #social-icons-container .social-icons-linkslist li a {
   display: block;
 }
 
+@media (max-width: 575.98px) {
+  .scroll-up-container {
+    right: 1rem;
+    bottom: 1rem;
+    font-size: 1.2rem;
+    padding: 3px 8px;
+  }
+}
+
 #hero-section {
   padding: 2.5rem 0;
   padding-bottom: 8rem;
@@ -487,10 +537,7 @@ footer #social-icons-container .social-icons-linkslist li a {
 
 #hero-section .hero-texts h1 {
   text-transform: capitalize;
-  font-size: 3.5rem;
   color: #414548;
-  font-weight: bold;
-  line-height: 70px;
   margin-bottom: 20px;
 }
 
@@ -577,6 +624,14 @@ footer #social-icons-container .social-icons-linkslist li a {
 @media (max-width: 767.98px) {
   #hero-section .hero-texts {
     padding-right: .75rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #hero-section .hero-texts .search-container button {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
   }
 }
 
@@ -736,6 +791,12 @@ footer #social-icons-container .social-icons-linkslist li a {
   }
 }
 
+@media (max-width: 575.98px) {
+  #mostused #tabs-container {
+    padding: 0;
+  }
+}
+
 #software {
   padding: 10rem 0;
 }
@@ -778,6 +839,12 @@ footer #social-icons-container .social-icons-linkslist li a {
   #software .software-row .software-desc {
     padding: 0;
     padding-top: 3rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #software {
+    padding: 4rem 0;
   }
 }
 /*# sourceMappingURL=app.css.map */

@@ -19,9 +19,23 @@ body{
   color: $black;
   line-height: 180%;
 }
+
+.row{
+  width: 100%;
+  margin: 0;
+}
+
 // .container{
 //   border: 1px solid blue;
 // }
+
+h1{
+  font-size: 3.5rem;
+  color: $headings-color;
+  font-weight: bold;
+  line-height: 70px;
+}
+
 h2{
   font-size: 3rem;
   font-weight: bold;
@@ -48,9 +62,11 @@ ul{
 .orange-text{
   color: $orange;
 }
+
 .stackbutler-text{
   color: $tackbutler-paars;
 }
+
 .orange-btn-lg{
   border: none;
   outline: none;
@@ -61,4 +77,21 @@ ul{
   line-height: 25px;
   border-radius: 15px;
   padding: 10px 49px;
+}
+
+@media (max-width: 575.98px) {
+  h1{
+    font-size: 3rem;
+    line-height: 60px;
+  }
+
+  h2{
+    font-size: 2.4rem;
+    line-height: 40px;
+  }
+
+  .orange-btn-lg{
+    padding: 5px 20px;
+  }
+
 }

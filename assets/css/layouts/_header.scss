@@ -165,6 +165,18 @@ header{
 
 }
 
+@media (max-width: 575.98px) {
+  header{
+    .top-header{
+      #tablet-logo{
+        a{
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
 //Menu ovelay
 #menu-overlay{
   display: none;

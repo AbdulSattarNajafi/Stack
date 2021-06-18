@@ -12,10 +12,7 @@
 
     h1{
       text-transform: capitalize;
-      font-size: 3.5rem;
       color: $headings-color;
-      font-weight: bold;
-      line-height: 70px;
       margin-bottom: 20px;
     }
 
@@ -93,6 +90,25 @@
 
     .hero-texts{
       padding-right: .75rem;
+    }
+
+  }
+}
+
+@media (max-width: 575.98px) {
+  #hero-section{
+
+    .hero-texts{
+      // padding-right: 0;
+
+      .search-container{
+        button{
+          width: 40px;
+          height: 40px;
+          font-size: 22px;
+        }
+      }
+
     }
 
   }
@@ -261,6 +277,14 @@
   }
 
 }
+
+@media (max-width: 575.98px) {
+  #mostused{
+    #tabs-container{
+      padding: 0;
+    }
+  }
+}
 // End of mostUsed Section
 
 //Styling for Software Section
@@ -310,6 +334,12 @@
 
     }
 
+  }
+}
+
+@media (max-width: 575.98px) {
+  #software{
+    padding: 4rem 0;
   }
 }
 // end Of Software Section
