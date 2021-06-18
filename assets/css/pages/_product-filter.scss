@@ -1,0 +1,222 @@
+#product-hero{
+  padding: 10rem 0 1rem 0;
+
+  .hero-texts{
+
+    .hero-heading{
+      position: relative;
+
+      img{
+        position: absolute;
+        left: -1rem;
+        top: -2.5rem;
+        z-index: -1;
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: 991.98px) {
+  #product-hero{
+    padding: 7rem 0 1rem 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #product-hero{
+    padding: 6rem 0 1rem 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #product-hero{
+    padding: 4rem 0 1rem 0;
+  }
+}
+
+#product-filter{
+  padding: 1rem 0 7rem 0;
+
+  .flex-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    #filter-container{
+      width: 255px;
+      height: auto;
+      background-color: $blue-100-60;
+      margin-right: 2rem;
+      border-radius: 15px;
+
+      .search-container{
+        display: flex;
+        align-items: center;
+        padding: 1.2rem 1.875rem;
+        padding-bottom: 0.2rem;
+
+        .icon{
+          color: $paragraphs-color;
+          font-weight: 300;
+        }
+
+        input{
+          width: 100%;
+          color: $paragraphs-color;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          padding: .5rem;
+
+          &::placeholder{
+            color: $paragraphs-color;
+          }
+
+        }
+
+      }
+
+      .under-line{
+        border-top: 1px solid $gray-200;
+        width: 96%;
+        margin: auto;
+      }
+
+      .filters{
+        padding: 1rem 1.875rem;
+
+        .star-filter{
+          padding: 1rem 0 1.1rem 0;
+
+          h3{
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: $paragraphs-color;
+            line-height: 160%;
+          }
+
+          .star-row{
+            display: flex;
+            align-items: center;
+  
+            input[type = 'checkbox'] {
+              width: 15px;
+              height: 15px;
+              border: 1px solid $tackbutler-paars;
+              margin-right: 7px;
+            }
+  
+            span{
+              line-height: 24px;
+              i{
+                margin-right: 7px;
+                font-size: 15px;
+                color: $yellow;
+                line-height: 16px;
+              }
+            }
+  
+          }
+
+        }
+
+        .fitler-form{
+          padding: 1.1rem 0 1.9rem 0;
+
+          .select-container{
+            margin-bottom: 1rem;
+
+            label{
+              font-size: 1.25rem;
+              font-weight: 700;
+              color: $paragraphs-color;
+              line-height: 160%;
+              margin-bottom: 4px;
+            }
+
+            .form-select{
+              border: 1px solid $tackbutler-paars;
+              padding: 6px 12px;
+              font-size: 14px;
+              color: $paragraphs-color;
+              font-weight: 600;
+              line-height: 160%;
+              background-color: transparent;
+              background-image: none;
+
+              option{
+                background: $blue-100-60;
+                font-size: 14px;
+                color: $paragraphs-color;
+                font-weight: 600;
+                line-height: 160%;
+              }
+
+            }
+
+          }
+
+          .orange-btn-lg{
+            margin-top: .5rem;
+            width: 100%;
+            border-radius: 5px;
+            font-weight: 700;
+          }
+
+        }
+
+      }
+
+    }
+
+    #products-container{
+      width: calc(80% - 287px);
+      display: grid;
+      grid-column-gap: 22px;
+      grid-row-gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 180px));
+      grid-auto-rows: auto;
+    }
+
+  }
+
+}
+
+@media (max-width: 1199.98px) {
+
+  #product-filter{
+    padding: 1rem 0 6rem 0;
+    .flex-wrapper #products-container{
+      width: calc(100% - 287px);
+    }
+  }
+
+}
+
+@media (max-width: 767.98px) {
+
+  #product-filter{
+    padding: 1rem 0 4rem 0;
+
+    .flex-wrapper{
+      flex-direction: column;
+
+      #filter-container{
+        margin-right: 0;
+        width: 100%;
+      }
+
+      #products-container{
+        width: 100%;
+        justify-content: center;
+        margin-top: 2.5rem;
+      }
+
+    }
+
+  }
+  
+}
