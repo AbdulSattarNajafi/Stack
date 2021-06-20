@@ -2,7 +2,6 @@
 
 // 1 Helpers
 @import './helpers/variables';
-@import './helpers/mixins';
 
 // 2 Basics
 @import './basics/global';
@@ -17,3 +16,5 @@
 // 5 pages
 @import './pages/home';
 @import './pages/product-filter';
+@import './pages/single-product';
+@import './pages/comparison';

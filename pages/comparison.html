@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google fonts link -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap link -->
+  <link rel="stylesheet" href="./../vendors/bootstrap/css/bootstrap.min.css">
+
+  <!-- FontAwesome link -->
+  <link rel="stylesheet" href="./../vendors/fontawesome/css/all.css">
+
+  <!-- Custom CSS link -->
+  <link rel="stylesheet" href="./../assets/css/app.css">
+  <title>Comparison</title>
+</head>
+<body>
+  
+  <!-- Start of Header -->
+  <header class="page-header">
+    <div class="container">
+      <nav class="top-header">
+
+        <div class="toggle-menu-container">
+          <button type="button" id="opne-menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div id="tablet-logo">
+          <a href="#">Stack Butler</a>
+        </div>
+
+        <div class="search-container">
+          <a href="#" class="logo">Stack Butler</a>
+          <input type="text" placeholder="Search products...">
+          <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <ul class="nav-list">
+          <li class="logo-container">
+            <button type="button" id="close-menu"><i class="fas fa-times"></i></button>
+          </li>
+          <li><a href="./../index.html">Home</a></li>
+          <li><a href="./single-product.html">Software</a></li>
+          <li class="login-btn"><button type="button" class="orange-btn-lg">Sign in</button></li>
+        </ul>
+
+        <div class="login-container single-product-none">
+          <button type="button" class="orange-btn-lg">Sign in</button>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+  <!-- End of Header -->
+
+  <!-- Overlay -->
+  <div id="menu-overlay"></div>
+  <div id="login-overlay"></div>
+  <div class="scroll-up-container">
+    <a href="#" id="scroll-up-btn">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+  </div>
+  <!-- Overlay -->
+
+  <!-- Start of Hero Section -->
+  <div class="container" id="comparison-hero">
+    <div class="row">
+
+      <div class="col-12 hero-texts">
+        <div class="hero-heading">
+          <img class="heading-img" src="./../assets/images/blue-logo-bg.png" alt="image">
+          <h1>Asana vs Wrike</h1>
+        </div>
+        <p>See this side-by-side comparison of Asana vs. Wrike based on preference data from user reviews. Asana rates 4.3/5 stars with 7,091 reviews.</p>
+        <p>By contrast, Wrike rates 4.2/5 stars with 1,406 reviews. Each product's score is calculated with real-time data from verified user reviews, to help you make the best choice between these two options, and decide which one is best for your business needs.</p>
+      </div>
+
+    </div>
+  </div>
+  <!-- End of Hero Section -->
+
+  <!-- Start of Hero Comparison -->
+  <section id="comparison">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12" id="table-container">
+
+          <div class="header-row">
+            <div class="thead-data add-product">
+              <button type="button">
+                <span><i class="fas fa-plus-circle"></i></span>
+                Add product
+              </button>
+            </div>
+            <div class="thead-data asana">
+              <img class="img-fluid" src="./../assets/images/Asana_logo.png" alt="image">
+              <p>Asana</p>
+              <button type="button" class="orange-btn-lg">To product</button>
+            </div>
+            <div class="thead-data wrike">
+              <img class="img-fluid" src="./../assets/images/wrike-logo.png" alt="image">
+              <p>Wrike</p>
+              <button type="button" class="orange-btn-lg">To product</button>
+            </div>
+          </div>
+
+          <div class="body-row">
+            <div class="tbody-data">
+              <p>Star rating</p>
+            </div>
+            <div class="tbody-data middle">
+              <p>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                <span class="stars"><i class="fas fa-star"></i></span> 
+                7,091 reviews
+              </p>
+            </div>
+            <div class="tbody-data"><p>
+              <span class="stars"><i class="fas fa-star"></i></span>
+              <span class="stars"><i class="fas fa-star"></i></span>
+              <span class="stars"><i class="fas fa-star"></i></span>
+              <span class="stars"><i class="fas fa-star"></i></span>
+              <span class="stars"><i class="fas fa-star"></i></span> 
+              1,200 reviews
+            </p></div>
+          </div>
+
+          <div class="body-row">
+            <div class="tbody-data">
+              <p>Market segments</p>
+            </div>
+            <div class="tbody-data middle">
+              <p>Small-Business</p>
+            </div>
+            <div class="tbody-data">
+              <p>Mid-Market</p>
+            </div>
+          </div>
+
+          <div class="body-row">
+            <div class="tbody-data">
+              <p>Entry level price</p>
+            </div>
+            <div class="tbody-data middle">
+              <p><span class="bold-weight">$0</span> user / month</p>
+            </div>
+            <div class="tbody-data">
+              <p><span class="bold-weight">$9.80</span> user/month</p>
+            </div>
+          </div>
+          
+
+        </div>
+
+        <div class="col-12 p-0">
+          <h3 class="stackbutler-text noraml-weight">Compare Asana vs Wrike</h3>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End of Hero Comparison -->
+
+  <!-- Start of Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6" id="footer-logo-container">
+          <img src="./../assets/images/logo-bg.png" alt="">
+          <h2>Stack Butler</h2>
+          <h2 class="orange-text">Keep in touch</h2>
+        </div>
+
+        <div class="col-lg-6" id="footer-links-container">
+
+          <div class="footer-links-container">
+            <div class="links-title">
+              <p>Categories</p>
+              <button type="button" class="show-footer-links">
+                <span class="show"><i class="fas fa-plus"></i></span>
+                <span class="hide"><i class="fas fa-minus"></i></span>
+              </button>
+            </div>
+            
+            <ul>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Analytics</a></li>
+              <li><a href="#">Commerce</a></li>
+              <li><a href="#">Insights</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-container">
+            <div class="links-title">
+              <p>Support</p>
+              <button type="button" class="show-footer-links">
+                <span class="show"><i class="fas fa-plus"></i></span>
+                <span class="hide"><i class="fas fa-minus"></i></span>
+              </button>
+            </div>
+            
+            <ul>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Guides</a></li>
+              <li><a href="#">API Status</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-container">
+            <div class="links-title">
+              <p>Company</p>
+              <button type="button" class="show-footer-links">
+                <span class="show"><i class="fas fa-plus"></i></span>
+                <span class="hide"><i class="fas fa-minus"></i></span>
+              </button>
+            </div>
+            
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Partners</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-12" id="social-icons-container">
+          <ul class="social-icons-linkslist">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <!-- End of Footer -->
+
+  <!-- Bootstrap JS file -->
+  <script src="./../vendors/bootstrap/js/bootstrap.bundle.js"></script>
+
+  <!-- App JS file -->
+  <script src="./../assets/js/app.js"></script>
+</body>
+</html>

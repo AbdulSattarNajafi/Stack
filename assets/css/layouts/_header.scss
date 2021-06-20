@@ -32,6 +32,47 @@ header{
       }
 
     }
+
+    .search-container{
+      position: relative;
+      display: flex;
+      .logo{
+        font-size: 2rem;
+        color: $black;
+        font-weight: bold;
+        line-height: 40px;
+        padding:0;
+        margin-right: 3rem;
+      }
+
+      input{
+        border: none;
+        outline: none;
+        border-bottom: 1px solid $headings-color;
+        padding-right: 2rem;
+        padding-left: 1px;
+        font-size: 1.25;
+        color: $paragraphs-color;
+        line-height: 25px;
+
+        &::placeholder{
+          color: $paragraphs-color;
+        }
+      }
+
+      .search-btn{
+        position: absolute;
+        right: 4px;
+        bottom: 2px;
+        padding: 0;
+        margin: 0;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 1.25;
+        color: $orange;
+      }
+    }
   
     .nav-list{
       display: flex;
@@ -40,6 +81,12 @@ header{
       li{
         display: inline-block;
         margin-right: 1rem;
+        &:last-child{
+          margin-right: 0;
+        }
+        .orange-btn-lg{
+          margin-left: 1rem;
+        }
   
         a{
           display: block;
@@ -77,6 +124,10 @@ header{
       }
   
     }
+
+    .single-product-none{
+      display: none;
+    }
   
   }
 
@@ -113,6 +164,10 @@ header{
         display: block;
       }
 
+      .search-container{
+        display: none;
+      }
+
       .nav-list{
         position: fixed;
         top: 0;
@@ -133,6 +188,10 @@ header{
             color: $white;
           }
 
+        }
+
+        .login-btn{
+          display: none;
         }
 
         .logo-container{
@@ -157,6 +216,10 @@ header{
       .nav-list-active{
         transform: translate(0%);
         transition: all .6s ease;
+      }
+
+      .single-product-none{
+        display: block;
       }
 
     }

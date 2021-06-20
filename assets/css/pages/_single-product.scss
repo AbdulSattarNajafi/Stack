@@ -1,0 +1,583 @@
+#single-product-hero{
+  padding:7rem 0 4rem 0;
+
+  .row{
+    align-items: center;
+  }
+
+  .hero-texts{
+
+    .hero-heading{
+      position: relative;
+
+      .heading-img{
+        position: absolute;
+        left: -3.3rem;
+        top: -3.3rem;
+        max-width: 50%;
+        height: auto;
+        z-index: -1;
+      }
+
+    }
+
+    .btns-container{
+      padding-top: 1rem;
+      .orange-btn-lg{
+        margin-left: 1rem;
+      }
+    }
+
+  }
+
+  .hero-image{
+    padding: .5rem 0 0 6rem;
+  }
+
+}
+
+@media (max-width: 991.98px) {
+  #single-product-hero{
+    padding: 5rem 0 4rem 0;
+    .hero-image{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  #single-product-hero{
+    padding: 4rem 0;
+  }
+}
+
+#butler-score{
+  padding: 1rem 0;
+
+  .butler-score-container{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: $blue-100-60;
+    border-radius: 15px;
+
+    .butler-texts{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2{
+        font-size: 3.8rem;
+        letter-spacing: 2px;
+        color: $gray-800;
+      }
+
+      .score-number{
+        color: $tackbutler-paars;
+        margin-top: 2rem;
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: 767.98px) {
+  #butler-score{
+
+    .butler-score-container{
+      flex-direction: column;
+      padding: 2rem 1rem;
+
+    }
+
+  }
+}
+
+@media (max-width: 575.98px) {
+  #butler-score .butler-score-container{
+    .butler-texts h2{
+      font-size: 2.6rem;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+#products{
+  padding: 1rem 0 5rem 0;
+
+  .products-lists-links{
+    display: flex;
+    flex-flow: row wrap;
+    padding: .4rem 0;
+    border-bottom: 1px solid $tackbutler-paars;
+
+    li{
+      display: inline-block;
+      margin-right: 1rem;
+
+      .product-link{
+        padding: .6rem 0;
+        font-size: 1.25rem;
+        color: $headings-color;
+        line-height: 25px;
+        transition: all .4s ease;
+
+        &:hover{
+          color: $tackbutler-paars;
+        }
+
+      }
+
+      .active{
+        color: $tackbutler-paars;
+      }
+
+    }
+
+  }
+
+  //Styling for Product-info
+  .information{
+    padding: 2rem 0;
+    display: none;
+
+    #overview{
+      padding: 0;
+
+      .headings{
+        margin: 1rem 0;
+        padding: 0;
+  
+        h3{
+          color: $tackbutler-paars;
+        }
+  
+      }
+
+      h4{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $headings-color;
+        line-height: 30px;
+        margin-bottom: 1rem;
+      }
+
+      p{
+        font-size: 1.25;
+        color: $headings-color;
+        line-height: 25px;
+        margin-bottom: 7px;
+      }
+
+      .details{
+        padding: 3rem 0 3.5rem 0;
+
+        p{
+          font-size: 1.125rem;
+          line-height: 32.4px;
+        }
+
+      }
+
+      .surfable-images{
+        display: flex;
+        flex-flow: row wrap;
+        padding: 1rem 0;
+        margin-bottom: 3.5rem;
+      }
+
+      .faq-container{
+        margin-bottom: 4.5rem;
+
+        .faq-elements{
+          height: 65px;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          border: 1px solid $tackbutler-paars;
+          border-radius: 6px;
+          padding: 1rem;
+          margin-bottom: 1rem;
+          overflow-y: hidden;
+          transition: all .5s ease;
+
+          .texts-container{
+            width: 80%;
+  
+            h4{
+              font-size: 1.5rem;
+              line-height: 30px;
+              color: $headings-color;
+              margin-bottom: 1rem;
+            }
+  
+            p{
+              line-height: 22px;
+              color: $headings-color;
+              margin: 0;
+            }
+  
+          }
+
+          .btns-container{
+            display: flex;
+            justify-content: flex-end;
+            width: 20%;
+            .faq-show-btn{
+              outline: none;
+              border: none;
+              padding: 0;
+              margin: 0;
+              background-color: transparent;
+              font-weight: 300;
+              color: $tackbutler-paars;
+  
+              .hide{
+                display: none;
+              }
+  
+            }
+          }
+
+        }
+
+        .active-faq{
+          align-items: center;
+          height: auto;
+          transition: all .5s ease;
+          h4{
+            color: $tackbutler-paars;
+            margin-bottom: 7px;
+          }
+          .btns-container .faq-show-btn{
+            .show{
+              display: none;
+            }
+            .hide{
+              display: block;
+            }
+          }
+        }
+
+      }
+
+    }
+
+    #comparison{
+      padding: 5rem 0 0 0;
+      display: flex;
+      justify-content: flex-end;
+
+      .comparison-container{
+        width: 258px;
+        height: 804px;
+        background-color: $blue-100-60;
+        border-radius: 15px;
+        padding: 2rem .75rem;
+
+        h3{
+          color: $tackbutler-paars;
+          text-align: center;
+        }
+
+        .comparisons{
+          display: flex;
+          justify-content: space-between;
+          padding-top: 1.6rem;
+
+          .surfable{
+            text-align: center;
+            p{
+              font-size: 1.25rem;
+              color: $headings-color;
+              line-height: 25px;
+              margin-top: 1rem;
+            }
+          }
+
+          .vs{
+            text-align: center;
+            margin-top: 1rem;
+            p{
+              font-size: 1.5rem;
+              color: $headings-color;
+              font-weight: bold;
+              line-height: 30px;
+            }
+          }
+
+          .asana{
+            text-align: center;
+            p{
+              font-size: 1.25rem;
+              color: $headings-color;
+              line-height: 25px;
+              margin-top: 1.87rem;
+            }
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  //Styling for Product-price
+  .pricing{
+    display: none;
+    padding: 2rem 0;
+
+    #pricing-container{
+      padding: 0;
+
+      .headings{
+        margin: 1rem 0;
+        padding: 0;
+  
+        h3{
+          color: $tackbutler-paars;
+        }
+  
+      }
+
+      .price-cards-container{
+        display: grid;
+        grid-gap: 28px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-rows: auto;
+      }
+
+    }
+
+    #empty-card-container{
+      padding: 5rem 0 0 1.625rem;
+      .empty-card{
+        background-color: $blue-100-60;
+        border-radius: 15px;
+        padding: 2rem;
+        height: 380px;
+      }
+    }
+
+  }
+
+  //Styling for Products features
+  .feature{
+    display: none;
+    padding: 2rem 0;
+
+    #features-elements-container{
+      padding: 0;
+
+      .headings{
+        margin: 1rem 0;
+        padding: 0;
+  
+        h3{
+          color: $tackbutler-paars;
+        }
+  
+      }
+
+      .features-element{
+        display: grid;
+        grid-row-gap: 30px;
+        grid-column-gap: 24px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-rows: auto;
+
+        .elements{
+          border: 1px solid $tackbutler-paars;
+          border-radius: 15px;
+          padding: .55rem 1rem;
+
+          p{
+            font-size: 1rem;
+            color: $headings-color;
+            line-height: 20px;
+            margin: 0;
+          }
+
+        }
+
+      }
+
+    }
+
+    #empty-feature-container{
+      padding: 5rem 0 0 1.625rem;
+      .empty-feature{
+        background-color: $blue-100-60;
+        border-radius: 15px;
+        padding: 2rem;
+        height: 380px;
+      }
+    }
+
+  }
+
+  // Styling for Reviews
+  .reviews{
+    display: none;
+    padding: 2rem 0;
+
+    #reviews-container{
+      padding: 0;
+
+      .headings{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 0;
+        padding: 0;
+  
+        h3{
+          color: $tackbutler-paars;
+        }
+  
+      }
+
+      .reviews-container{
+        padding: 1rem 0;
+      }
+
+    }
+
+    #empty-review-container{
+      padding: 6.5rem 0 0 0;
+      display: flex;
+      justify-content: flex-end;
+
+      .empty-review{
+        background-color: $blue-100-60;
+        border-radius: 15px;
+        padding: 2rem;
+        width: 258px;
+        height: 380px;
+      }
+
+    }
+
+  }
+
+  // Styling for Alternatives
+  .alternatives{
+    display: none;
+    padding: 2rem 0;
+
+    #alternative-cards-container{
+      padding: 0;
+
+      .headings{
+        margin: 1rem 0;
+        padding: 0;
+  
+        h3{
+          color: $tackbutler-paars;
+        }
+  
+      }
+
+      .alter-cards-container{
+        padding: 1rem 0;
+      }
+
+    }
+
+    #empty-alternatives-container{
+      padding: 6rem 0 0 0;
+      display: flex;
+      justify-content: flex-end;
+      .empty-alternatives{
+        background-color: $blue-100-60;
+        border-radius: 15px;
+        padding: 2rem;
+        width: 258px;
+        height: 380px;
+      }
+    }
+
+  }
+
+  .active-single-product{
+    display: flex;
+  }
+
+}
+
+@media (max-width: 991.98px) {
+  #products .information #comparison{
+    padding-top: 2rem;
+    .comparison-container{
+      width: 100%;
+      height: auto;
+      padding: 2rem 3rem;
+    }
+  }
+
+  #products .pricing #empty-card-container,
+  #products .feature #empty-feature-container{
+    padding: 2rem 0 0 0;
+  }
+
+  #products .reviews #empty-review-container{
+    padding: 1rem 0 0 0;
+    .empty-review{
+      width: 100%;
+    }
+  }
+
+  #products .alternatives #empty-alternatives-container{
+    padding: 1rem 0 0 0;
+    .empty-alternatives{
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  #products{
+
+
+    .information{
+      #overview .faq-container .faq-elements{
+        height: 98px;
+      }
+
+      #comparison .comparison-container{
+        padding: 2rem;
+      }
+
+    }
+
+    .reviews #reviews-container .headings{
+      flex-direction: column;
+      h3{
+        margin-bottom: 1.4rem;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 415.98px) {
+  #products{
+    .information{
+
+      #overview .faq-container .faq-elements{
+        .texts-container h4{
+          font-size: 1.2rem;
+        }
+      }
+
+      #comparison .comparison-container{
+        padding: 1rem;
+      }
+
+    }
+  }
+}

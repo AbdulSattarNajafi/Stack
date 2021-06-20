@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google fonts link -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap link -->
+  <link rel="stylesheet" href="./../vendors/bootstrap/css/bootstrap.min.css">
+
+  <!-- FontAwesome link -->
+  <link rel="stylesheet" href="./../vendors/fontawesome/css/all.css">
+
+  <!-- Custom CSS link -->
+  <link rel="stylesheet" href="./../assets/css/app.css">
+  <title>Single Product</title>
+</head>
+<body>
+  
+  <!-- Start of Header -->
+  <header class="page-header">
+    <div class="container">
+      <nav class="top-header">
+
+        <div class="toggle-menu-container">
+          <button type="button" id="opne-menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div id="tablet-logo">
+          <a href="#">Stack Butler</a>
+        </div>
+
+        <div class="search-container">
+          <a href="#" class="logo">Stack Butler</a>
+          <input type="text" placeholder="Search products...">
+          <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <ul class="nav-list">
+          <li class="logo-container">
+            <button type="button" id="close-menu"><i class="fas fa-times"></i></button>
+          </li>
+          <li><a href="./../index.html">Home</a></li>
+          <li><a href="#">Software</a></li>
+          <li class="login-btn"><button type="button" class="orange-btn-lg">Sign in</button></li>
+        </ul>
+
+        <div class="login-container single-product-none">
+          <button type="button" class="orange-btn-lg">Sign in</button>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+  <!-- End of Header -->
+
+  <!-- Overlay -->
+  <div id="menu-overlay"></div>
+  <div id="login-overlay"></div>
+  <div class="scroll-up-container">
+    <a href="#" id="scroll-up-btn">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+  </div>
+  <!-- Overlay -->
+
+  <!-- Start of Hero Section -->
+  <div class="container" id="single-product-hero">
+    <div class="row">
+
+      <div class="col-lg-6 hero-texts">
+
+        <div class="hero-heading">
+          <img class="heading-img" src="./../assets/images/blue-logo-bg.png" alt="image">
+          <h1>Surfable</h1>
+        </div>
+
+        <p>Surfable is Web-based Sales CRM & Pipeline Management Software. Surfable focuses on making more sales happen with less time needed for admin.</p>
+        <p>Surfable has a Butler score of 5, based on 95 user reviews collected from the web. Surfable is an alternative to</p>
+        <p>Premium pricing starts at $ 15</p>
+
+        <div class="btns-container">
+          <button class="orange-btn-outline">Trial</button>
+          <button class="orange-btn-lg">Website</button>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6 hero-image">
+        <div class="img-container">
+          <img src="./../assets/images/single-product-hero.png" alt="image">
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- End of Hero Section -->
+
+  <!-- Start of butler score Section -->
+  <section id="butler-score">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 butler-score-container">
+
+          <div class="butler-texts">
+            <h2>Butlerscore:</h2>
+            <h2 class="score-number">4.7</h2>
+          </div>
+
+          <div class="butler-image">
+            <img class="img-fluid" src="./../assets/images/single-product-banner.png" alt="image">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of butler score Section -->
+
+  <section id="products">
+    <div class="container" id="single-products-wrapper">
+
+      <!-- Products tabs -->
+      <div class="row">
+        <ul class="products-lists-links">
+          <li class="products-lists">
+            <a class="product-link active" href="javascript:void(0)" data-id="information">Product information</a>
+          </li>
+          <li class="products-lists">
+            <a class="product-link" href="javascript:void(0)" data-id="pricing">Pricing</a>
+          </li>
+          <li class="products-lists">
+            <a class="product-link" href="javascript:void(0)" data-id="feature">Features</a>
+          </li>
+          <li class="products-lists">
+            <a class="product-link" href="javascript:void(0)" data-id="reviews">Reviews</a>
+          </li>
+          <li class="products-lists">
+            <a class="product-link" href="javascript:void(0)" data-id="alternatives">Alternatives</a>
+          </li>
+          <li>
+            <a class="product-link" href="./comparison.html">Comparison</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Products information -->
+      <div class="row information active-single-product">
+
+        <div class="col-lg-7" id="overview">
+
+          <div class="headings">
+            <h3><span class="noraml-weight">Surfable</span> Overview</h3>
+          </div>
+
+          <h4>Contact details</h4>
+          <p><span class="bold-weight">Company name</span>: Surfable</p>
+          <p><span class="bold-weight">Founded</span>: 2020</p>
+          <p><span class="bold-weight">Website</span>: https://surfable.io</p>
+
+          <div class="details">
+            <h4>Details</h4>
+            <p>Website making tool that allows you to create world's fastest sites. Fact: fast websites are more profitable websites. Elevate your online presence with lighting fast websites that reduce bounce and inspire visitors to become your customers. Due to the emotional and impulsive need of people for speed, website visitors will leave if a website takes more than 3 seconds to load. Satisfaction drop by 16% for every 1-second delay.</p>
+          </div>
+
+          <div class="headings">
+            <h3><span class="noraml-weight">Surfable</span> Images</h3>
+          </div>
+
+          <div class="surfable-images">
+            <img class="img-fluid" src="./../assets/images/surfable-1.png" alt="image">
+            <img class="img-fluid" src="./../assets/images/surfable-2.png" alt="image">
+            <img class="img-fluid" src="./../assets/images/surfable-3.png" alt="image">
+            <img class="img-fluid" src="./../assets/images/surfable-4.png" alt="image">
+          </div>
+
+          <div class="headings">
+            <h3><span class="noraml-weight">Surfable</span> FAQ</h3>
+          </div>
+
+          <div class="faq-container">
+
+            <div class="faq-elements">
+              <div class="texts-container">
+                <h4>What is the best usecase for Surfable?</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="btns-container">
+                <button type="button" class="faq-show-btn">
+                  <span class="show"><i class="fas fa-plus"></i></span>
+                  <span class="hide"><i class="fas fa-minus"></i></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="faq-elements">
+              <div class="texts-container">
+                <h4>What is the best usecase for Surfable?</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="btns-container">
+                <button type="button" class="faq-show-btn">
+                  <span class="show"><i class="fas fa-plus"></i></span>
+                  <span class="hide"><i class="fas fa-minus"></i></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="faq-elements">
+              <div class="texts-container">
+                <h4>What is the best usecase for Surfable?</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="btns-container">
+                <button type="button" class="faq-show-btn">
+                  <span class="show"><i class="fas fa-plus"></i></span>
+                  <span class="hide"><i class="fas fa-minus"></i></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="faq-elements">
+              <div class="texts-container">
+                <h4>What is the best usecase for Surfable?</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="btns-container">
+                <button type="button" class="faq-show-btn">
+                  <span class="show"><i class="fas fa-plus"></i></span>
+                  <span class="hide"><i class="fas fa-minus"></i></span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="headings">
+            <h3><span class="noraml-weight">Surfable</span> Reviews</h3>
+          </div>
+
+          <div class="reviews-container">
+
+            <!-- Review Card 1 -->
+            <div class="review-cards">
+              <div class="name-container">
+                <h4>Lauri H</h4>
+                <p>Makeup artist</p>
+              </div>
+
+              <div class="review-texts">
+                <h4>Great marketing tool</h4>
+                <p>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="sm-fonts">
+                    Published on 31/01/2021, 20:22
+                  </span>
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+
+            </div>
+
+            <!-- Review Card 2 -->
+            <div class="review-cards">
+              <div class="name-container">
+                <h4>Lauri H</h4>
+                <p>Makeup artist</p>
+              </div>
+
+              <div class="review-texts">
+                <h4>Great marketing tool</h4>
+                <p>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="sm-fonts">
+                    Published on 31/01/2021, 20:22
+                  </span>
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+
+            </div>
+
+            <!-- Review Card 3 -->
+            <div class="review-cards">
+              <div class="name-container">
+                <h4>Lauri H</h4>
+                <p>Makeup artist</p>
+              </div>
+
+              <div class="review-texts">
+                <h4>Great marketing tool</h4>
+                <p>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="sm-fonts">
+                    Published on 31/01/2021, 20:22
+                  </span>
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-5" id="comparison">
+          <div class="comparison-container">
+            <h3><span class="noraml-weight">Surfable</span> Comparison</h3>
+
+            <div class="comparisons">
+              <div class="surfable">
+                <img class="img-fluid" src="./../assets/images/surfable-logo.png" alt="image">
+                <p>Surfable</p>
+              </div>
+              <div class="vs"><p>VS</p></div>
+              <div class="asana">
+                <img class="img-fluid" src="./../assets/images/Asana_logo.png" alt="image">
+                <p>Asana</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- End of Products information -->
+
+      <!-- Product Price -->
+      <div class="row pricing">
+        <div class="col-lg-9" id="pricing-container">
+
+          <div class="headings">
+            <h3><span class="noraml-weight">Surfable</span> Pricing</h3>
+          </div>
+
+          <div class="price-cards-container">
+
+            <!-- Price Card 1 -->
+            <div class="price-cards">
+              <h3>Basic</h3>
+              <h3><span class="stackbutler-text"> $</span> 18<span class="stackbutler-text sm-texts"> / month</span></h3>
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> 
+                Activities and calendar view</p>
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> Custom fields</p>
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> Custom fields</p>
+              <div class="btns-container">
+                <button type="button" class="orange-btn-lg">Get started</button>
+              </div>
+            </div>
+
+            <!-- Price Card 2 -->
+            <div class="price-cards">
+              <h3>Premium</h3>
+              <h3><span class="stackbutler-text"> $</span> 18<span class="stackbutler-text sm-texts"> / month</span></h3>
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> 
+                Activities and calendar view</p>
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> Custom fields</p>
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> Custom fields</p>
+              <div class="btns-container">
+                <button type="button" class="orange-btn-lg">Get started</button>
+              </div>
+            </div>
+
+            <!-- Price Card 3 -->
+            <div class="price-cards">
+              <h3>Basic</h3>
+              <h3><span class="stackbutler-text"> $</span> 18<span class="stackbutler-text sm-texts"> / month</span></h3>
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> 
+                Activities and calendar view</p>
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> Custom fields</p>
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> Custom fields</p>
+              <div class="btns-container">
+                <button type="button" class="orange-btn-lg">Get started</button>
+              </div>
+            </div>
+
+            <!-- Price Card 4 -->
+            <div class="price-cards">
+              <h3>Premium</h3>
+              <h3><span class="stackbutler-text"> $</span> 18<span class="stackbutler-text sm-texts"> / month</span></h3>
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> 
+                Activities and calendar view</p>
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> Custom fields</p>
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> Custom fields</p>
+              <div class="btns-container">
+                <button type="button" class="orange-btn-lg">Get started</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-lg-3" id="empty-card-container">
+          <div class="empty-card"></div>
+        </div>
+      </div>
+      <!-- End of Product Price -->
+
+      <!-- Start of Features -->
+      <div class="row feature">
+
+        <div class="col-lg-9" id="features-elements-container">
+
+          <div class="headings">
+            <h3><span class="noraml-weight">Surfable</span> Features</h3>
+          </div>
+
+          <div class="features-element">
+
+            <!-- Elements 1 -->
+            <div class="elements">
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> A/B Testing</p>
+            </div>
+            <!-- Elements 2 -->
+            <div class="elements">
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> Video Conferencing</p>
+            </div>
+            <!-- Elements 3 -->
+            <div class="elements">
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> Participant Permissions</p>
+            </div>
+            <!-- Elements 4 -->
+            <div class="elements">
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> Campaign Personalization</p>
+            </div>
+            <!-- Elements 5 -->
+            <div class="elements">
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> Target Account </p>
+            </div>
+            <!-- Elements 6 -->
+            <div class="elements">
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> A/B Testing </p>
+            </div>
+            <!-- Elements 7 -->
+            <div class="elements">
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> A/B Testing </p>
+            </div>
+            <!-- Elements 8 -->
+            <div class="elements">
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> Video Conferencing</p>
+            </div>
+            <!-- Elements 9 -->
+            <div class="elements">
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> Participant Permissions </p>
+            </div>
+            <!-- Elements 10 -->
+            <div class="elements">
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> Campaign Personalization </p>
+            </div>
+            <!-- Elements 11 -->
+            <div class="elements">
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> Target Account</p>
+            </div>
+            <!-- Elements 12 -->
+            <div class="elements">
+              <p><span class="stackbutler-text"><i class="fas fa-check-circle"></i></span> A/B Testing</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-3" id="empty-feature-container">
+          <div class="empty-feature"></div>
+        </div>
+
+      </div>
+      <!-- End of Features -->
+
+      <!-- Start of Reviews -->
+      <div class="row reviews">
+
+        <div class="col-lg-7" id="reviews-container">
+
+          <div class="headings">
+            <h3><span class="noraml-weight">Surfable</span> Reviews</h3>
+            <button type="button" class="orange-btn-lg">Write a review</button>
+          </div>
+
+          <div class="reviews-container">
+
+            <!-- Review Card 1 -->
+            <div class="review-cards">
+              <div class="name-container">
+                <h4>Lauri H</h4>
+                <p>Makeup artist</p>
+              </div>
+
+              <div class="review-texts">
+                <h4>Great marketing tool</h4>
+                <p>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="sm-fonts">
+                    Published on 31/01/2021, 20:22
+                  </span>
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+
+            </div>
+
+            <!-- Review Card 2 -->
+            <div class="review-cards">
+              <div class="name-container">
+                <h4>Lauri H</h4>
+                <p>Makeup artist</p>
+              </div>
+
+              <div class="review-texts">
+                <h4>Great marketing tool</h4>
+                <p>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="sm-fonts">
+                    Published on 31/01/2021, 20:22
+                  </span>
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+
+            </div>
+
+            <!-- Review Card 3 -->
+            <div class="review-cards">
+              <div class="name-container">
+                <h4>Lauri H</h4>
+                <p>Makeup artist</p>
+              </div>
+
+              <div class="review-texts">
+                <h4>Great marketing tool</h4>
+                <p>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="sm-fonts">
+                    Published on 31/01/2021, 20:22
+                  </span>
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+
+            </div>
+
+            <!-- Review Card 4 -->
+            <div class="review-cards">
+              <div class="name-container">
+                <h4>Lauri H</h4>
+                <p>Makeup artist</p>
+              </div>
+
+              <div class="review-texts">
+                <h4>Great marketing tool</h4>
+                <p>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="sm-fonts">
+                    Published on 31/01/2021, 20:22
+                  </span>
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+
+            </div>
+
+            <!-- Review Card 5 -->
+            <div class="review-cards">
+              <div class="name-container">
+                <h4>Lauri H</h4>
+                <p>Makeup artist</p>
+              </div>
+
+              <div class="review-texts">
+                <h4>Great marketing tool</h4>
+                <p>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="sm-fonts">
+                    Published on 31/01/2021, 20:22
+                  </span>
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+
+            </div>
+
+            <!-- Review Card 6 -->
+            <div class="review-cards">
+              <div class="name-container">
+                <h4>Lauri H</h4>
+                <p>Makeup artist</p>
+              </div>
+
+              <div class="review-texts">
+                <h4>Great marketing tool</h4>
+                <p>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="stars"><i class="fas fa-star"></i></span>
+                  <span class="sm-fonts">
+                    Published on 31/01/2021, 20:22
+                  </span>
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-5" id="empty-review-container">
+          <div class="empty-review"></div>
+        </div>
+
+      </div>
+      <!-- End of Reviews -->
+
+      <!-- Start of Alternatives -->
+      <div class="row alternatives">
+
+        <div class="col-lg-7" id="alternative-cards-container">
+
+          <div class="headings">
+            <h3><span class="noraml-weight">Surfable</span> Alternatives</h3>
+          </div>
+
+          <div class="alter-cards-container">
+
+            <!-- Alternative Cards 1 -->
+            <div class="alternative-cards">
+              <div class="logo-container">
+                <img class="img-fluid" src="./../assets/images/Asana_logo.png" alt="image">
+              </div>
+
+              <div class="card-texts">
+                <div class="card-title">
+                  <div class="card-ratings">
+                    <h4>Asana</h4>
+                    <p>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                    </p>
+                  </div>
+                  <div class="card-button">
+                    <button type="submit" class="orange-btn-lg">Visit profile</button>
+                  </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+
+            </div>
+
+            <!-- Alternative Cards 2 -->
+            <div class="alternative-cards">
+              <div class="logo-container">
+                <img class="img-fluid" src="./../assets/images/Asana_logo.png" alt="image">
+              </div>
+
+              <div class="card-texts">
+                <div class="card-title">
+                  <div class="card-ratings">
+                    <h4>Asana</h4>
+                    <p>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                    </p>
+                  </div>
+                  <div class="card-button">
+                    <button type="submit" class="orange-btn-lg">Visit profile</button>
+                  </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+
+            </div>
+
+            <!-- Alternative Cards 3 -->
+            <div class="alternative-cards">
+              <div class="logo-container">
+                <img class="img-fluid" src="./../assets/images/Asana_logo.png" alt="image">
+              </div>
+
+              <div class="card-texts">
+                <div class="card-title">
+                  <div class="card-ratings">
+                    <h4>Asana</h4>
+                    <p>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                    </p>
+                  </div>
+                  <div class="card-button">
+                    <button type="submit" class="orange-btn-lg">Visit profile</button>
+                  </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+
+            </div>
+
+            <!-- Alternative Cards 4 -->
+            <div class="alternative-cards">
+              <div class="logo-container">
+                <img class="img-fluid" src="./../assets/images/Asana_logo.png" alt="image">
+              </div>
+
+              <div class="card-texts">
+                <div class="card-title">
+                  <div class="card-ratings">
+                    <h4>Asana</h4>
+                    <p>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                    </p>
+                  </div>
+                  <div class="card-button">
+                    <button type="submit" class="orange-btn-lg">Visit profile</button>
+                  </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+
+            </div>
+
+            <!-- Alternative Cards 5 -->
+            <div class="alternative-cards">
+              <div class="logo-container">
+                <img class="img-fluid" src="./../assets/images/Asana_logo.png" alt="image">
+              </div>
+
+              <div class="card-texts">
+                <div class="card-title">
+                  <div class="card-ratings">
+                    <h4>Asana</h4>
+                    <p>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                      <span class="stars"><i class="fas fa-star"></i></span>
+                    </p>
+                  </div>
+                  <div class="card-button">
+                    <button type="submit" class="orange-btn-lg">Visit profile</button>
+                  </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+
+            </div>
+
+          </div>
+          <!-- End of Alternative Cards -->
+
+        </div>
+
+        <div class="col-lg-5" id="empty-alternatives-container">
+          <div class="empty-alternatives"></div>
+        </div>
+
+      </div>
+      <!-- End of Alternatives -->
+      
+    </div>
+  </section>
+
+  <!-- Start of Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6" id="footer-logo-container">
+          <img src="./../assets/images/logo-bg.png" alt="">
+          <h2>Stack Butler</h2>
+          <h2 class="orange-text">Keep in touch</h2>
+        </div>
+
+        <div class="col-lg-6" id="footer-links-container">
+
+          <div class="footer-links-container">
+            <div class="links-title">
+              <p>Categories</p>
+              <button type="button" class="show-footer-links">
+                <span class="show"><i class="fas fa-plus"></i></span>
+                <span class="hide"><i class="fas fa-minus"></i></span>
+              </button>
+            </div>
+            
+            <ul>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Analytics</a></li>
+              <li><a href="#">Commerce</a></li>
+              <li><a href="#">Insights</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-container">
+            <div class="links-title">
+              <p>Support</p>
+              <button type="button" class="show-footer-links">
+                <span class="show"><i class="fas fa-plus"></i></span>
+                <span class="hide"><i class="fas fa-minus"></i></span>
+              </button>
+            </div>
+            
+            <ul>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Guides</a></li>
+              <li><a href="#">API Status</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-container">
+            <div class="links-title">
+              <p>Company</p>
+              <button type="button" class="show-footer-links">
+                <span class="show"><i class="fas fa-plus"></i></span>
+                <span class="hide"><i class="fas fa-minus"></i></span>
+              </button>
+            </div>
+            
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Partners</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-12" id="social-icons-container">
+          <ul class="social-icons-linkslist">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <!-- End of Footer -->
+
+  <!-- Bootstrap JS file -->
+  <script src="./../vendors/bootstrap/js/bootstrap.bundle.js"></script>
+
+  <!-- App JS file -->
+  <script src="./../assets/js/app.js"></script>
+  <script src="./../assets/js/single-product.js"></script>
+</body>
+</html>

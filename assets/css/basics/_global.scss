@@ -43,6 +43,12 @@ h2{
   line-height: 60px;
 }
 
+h3{
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 50px;
+}
+
 h4{
   font-size: 1.125rem;
   font-weight: bold;
@@ -79,6 +85,31 @@ ul{
   padding: 10px 49px;
 }
 
+.orange-btn-outline{
+  border: none;
+  outline: none;
+  border: 1px solid $orange;
+  background-color: transparent;
+  color: $orange;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 25px;
+  border-radius: 15px;
+  padding: 10px 49px;
+}
+
+.noraml-weight{
+  font-weight: normal;
+}
+
+.bold-weight{
+  font-weight: bold;
+}
+
+.sm-texts{
+  font-size: 1.25rem;
+}
+
 @media (max-width: 575.98px) {
   h1{
     font-size: 3rem;
@@ -90,8 +121,18 @@ ul{
     line-height: 40px;
   }
 
-  .orange-btn-lg{
+  h3{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 34px;
+  }
+
+  .orange-btn-lg,
+  .orange-btn-outline{
     padding: 5px 20px;
+    padding-bottom: 7px;
+    font-size: 1rem;
+    line-height: 24px;
   }
 
 }

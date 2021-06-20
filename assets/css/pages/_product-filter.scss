@@ -38,7 +38,7 @@
 }
 
 #product-filter{
-  padding: 1rem 0 7rem 0;
+  padding: 2rem 0 7rem 0;
 
   .flex-wrapper{
     display: flex;
@@ -188,7 +188,7 @@
 @media (max-width: 1199.98px) {
 
   #product-filter{
-    padding: 1rem 0 6rem 0;
+    padding: 2rem 0 6rem 0;
     .flex-wrapper #products-container{
       width: calc(100% - 287px);
     }
@@ -199,7 +199,7 @@
 @media (max-width: 767.98px) {
 
   #product-filter{
-    padding: 1rem 0 4rem 0;
+    padding: 2rem 0 4rem 0;
 
     .flex-wrapper{
       flex-direction: column;

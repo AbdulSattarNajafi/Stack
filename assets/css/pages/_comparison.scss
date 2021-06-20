@@ -1,0 +1,106 @@
+#comparison-hero{
+  padding: 7rem 0 1rem 0;
+
+  .hero-texts{
+
+    .hero-heading{
+      position: relative;
+
+      .heading-img{
+        position: absolute;
+        left: -3rem;
+        top: -3rem;
+        max-width: 50%;
+        height: auto;
+        z-index: -1;
+      }
+
+    }
+
+  }
+
+}
+
+#comparison{
+  padding: 2rem 0 10rem 0;
+
+  #table-container{
+    padding: 0;
+    background-color: $blue-100-60;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+
+    .header-row{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      .thead-data{
+        width: 33.33%;
+        padding: 2rem 1rem;
+        text-align: center;
+      }
+
+      .add-product button{
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        line-height: 30px;
+        span i{
+          color: $tackbutler-paars;
+        }
+      }
+
+      .asana{
+        border-left: 1px solid $lichtpaars;
+        border-right: 1px solid $lichtpaars;
+        p{
+          font-size: 1.5rem;
+          line-height: 30px;
+          margin: 1.4rem 0 1rem 0;
+        }
+      }
+
+      .wrike{
+        p{
+          font-size: 1.5rem;
+          line-height: 30px;
+          margin: 1rem 0;
+        }
+      }
+
+    }
+
+    .body-row{
+      border-top: 1px solid $lichtpaars;
+      display: flex;
+      width: 100%;
+
+      .tbody-data{
+        width: 33.33%;
+        padding: 1rem;
+        
+        p{
+          font-size: 1.25rem;
+          line-height: 25px;
+          margin: 0;
+
+          .stars{
+            font-size: 1rem;
+            color: $yellow;
+          }
+
+        }
+
+      }
+
+      .middle{
+        border-left: 1px solid $lichtpaars;
+        border-right: 1px solid $lichtpaars;
+      }
+
+    }
+
+  }
+
+}
