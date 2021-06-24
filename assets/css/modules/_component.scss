@@ -13,8 +13,7 @@
   }
 
   .stars{
-    display: flex;
-    justify-content: center;
+    @include flex-horizental-center;
     font-size: 12px;
     color: $yellow;
 
@@ -53,8 +52,7 @@
       margin-bottom: 0;
     }
 
-    display: flex;
-    align-items: center;
+    @include flex-vertical-center;
     background-color: $blue-100-60;
     border-radius: 15px;
     padding: 1rem;
@@ -102,24 +100,21 @@
     margin-bottom: 0;
   }
 
-  display: flex;
-  align-items: center;
+  @include flex-vertical-center;
   background-color: $blue-100-60;
   border-radius: 15px;
   padding: 1rem;
 
   .logo-container{
     width: 270px;
-    display: flex;
-    justify-content: center;
+    @include flex-horizental-center;
   }
 
   .card-texts{
     padding: 0 .5rem;
 
     .card-title{
-      display: flex;
-      justify-content: space-between;
+      @include flex-between;
       align-items: flex-start;
       margin: 0;
 

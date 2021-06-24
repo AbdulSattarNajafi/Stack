@@ -74,8 +74,7 @@ ul{
 }
 
 .orange-btn-lg{
-  border: none;
-  outline: none;
+  @include button-as-text;
   background-color: $orange;
   font-size: 1.25rem;
   font-weight: 500;
@@ -86,10 +85,8 @@ ul{
 }
 
 .orange-btn-outline{
-  border: none;
-  outline: none;
+  @include button-as-text;
   border: 1px solid $orange;
-  background-color: transparent;
   color: $orange;
   font-size: 1.25rem;
   font-weight: 500;

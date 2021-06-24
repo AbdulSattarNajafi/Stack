@@ -44,11 +44,12 @@
 
         <ul class="nav-list">
           <li class="logo-container">
+            <a href="#" class="logo logo-single-page">Stack Butler</a>
             <button type="button" id="close-menu"><i class="fas fa-times"></i></button>
           </li>
           <li><a href="./../index.html">Home</a></li>
           <li><a href="./single-product.html">Software</a></li>
-          <li class="login-btn"><button type="button" class="orange-btn-lg">Sign in</button></li>
+          <li class="login-btn"><button type="button" class="orange-btn-lg" id="btn-signin">Sign in</button></li>
         </ul>
 
         <div class="login-container single-product-none">
@@ -71,7 +72,7 @@
   <!-- Overlay -->
 
   <!-- Start of Hero Section -->
-  <div class="container" id="comparison-hero">
+  <div class="container hero-container" id="comparison-hero">
     <div class="row">
 
       <div class="col-12 hero-texts">
@@ -172,6 +173,47 @@
     </div>
   </section>
   <!-- End of Hero Comparison -->
+
+  <!-- Start of Login and Sign up -->
+  <section class="login-signup">
+    <div class="forms-container">
+
+      <!-- Start of Signin form -->
+      <form action="#" class="log-forms signin-form">
+        <div class="form-header">
+          <h1>Log in</h1>
+          <p>Don't have an account? <span class="form-link" id="signup-btn">Sign up</span></p>
+        </div>
+        <div class="form-inputs">
+          <input type="email" name="email" placeholder="E-mail" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <button type="submit" class="orange-btn-lg">Login</button>
+        </div>
+      </form>
+      <!-- End of Signin form -->
+
+      <!-- Start of Sign up form -->
+      <form action="#" class="log-forms sign-up-form">
+        <div class="form-header">
+          <h1>Create account</h1>
+          <p>Already have an account? <span class="form-link" id="signin-btn">Sign in</span></p>
+        </div>
+        <div class="form-inputs">
+          <input type="email" name="email" placeholder="E-mail" required>
+          <div class="names-container">
+            <input type="text" name="first-name" placeholder="First name" required>
+            <input type="text" name="last-name" placeholder="Last name"  required>
+          </div>
+          <input type="password" name="password" placeholder="Password" required>
+          <input type="password" name="consfirm-password" placeholder="Confirm password" required>
+          <button type="submit" class="orange-btn-lg">Register</button>
+        </div>
+      </form>
+      <!-- End of Sign up form -->
+
+    </div>
+  </section>
+  <!-- End of Login and Sign up -->
 
   <!-- Start of Footer -->
   <footer>

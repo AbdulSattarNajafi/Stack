@@ -53,8 +53,7 @@
       border-radius: 15px;
 
       .search-container{
-        display: flex;
-        align-items: center;
+        @include flex-vertical-center;
         padding: 1.2rem 1.875rem;
         padding-bottom: 0.2rem;
 
@@ -66,9 +65,7 @@
         input{
           width: 100%;
           color: $paragraphs-color;
-          border: none;
-          outline: none;
-          background-color: transparent;
+          @include button-as-text;
           padding: .5rem;
 
           &::placeholder{

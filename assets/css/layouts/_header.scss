@@ -1,19 +1,19 @@
 header{
   width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  transition: all .3s ease;
 
   .top-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-between-vertivalCenter;
+
     padding: 1.5rem 0;
 
     .toggle-menu-container{
       display: none;
       
       button{
-        outline: none;
-        border: none;
-        background-color: transparent;
+        @include button-as-text;
+
         font-size: 1.6rem;
         color: $headings-color;
       }
@@ -46,8 +46,8 @@ header{
       }
 
       input{
-        border: none;
-        outline: none;
+        @include button-as-text;
+
         border-bottom: 1px solid $headings-color;
         padding-right: 2rem;
         padding-left: 1px;
@@ -66,9 +66,9 @@ header{
         bottom: 2px;
         padding: 0;
         margin: 0;
-        border: none;
-        outline: none;
-        background-color: transparent;
+
+        @include button-as-text;
+
         font-size: 1.25;
         color: $orange;
       }
@@ -101,9 +101,8 @@ header{
   
       .logo-container{
         margin-right: 4rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+
+        @include flex-between-vertivalCenter;
   
         .logo{
           font-size: 2rem;
@@ -112,11 +111,13 @@ header{
           padding:0;
         }
 
+        .logo-single-page{
+          display: none;
+        }
+
         #close-menu{
           display: none;
-          outline: none;
-          border: none;
-          background-color: transparent;
+          @include button-as-text;
           font-size: 1.6rem;
           color: $white;
         }
@@ -138,9 +139,10 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-  background-color: $white;
-  box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.16);
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.16);
   z-index: 22;
+  transition: all .3s ease;
 
   .top-header{
     padding: .75rem 0;
@@ -199,6 +201,10 @@ header{
           padding: 1rem;
           border-bottom: 1px solid $white;
 
+          .logo-single-page{
+            display: block;
+          }
+
           #close-menu{
             display: block;
           }
@@ -243,11 +249,11 @@ header{
 //Menu ovelay
 #menu-overlay{
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.521);
   z-index: 99;
 }

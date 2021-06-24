@@ -55,16 +55,14 @@
   padding: 1rem 0;
 
   .butler-score-container{
-    display: flex;
-    justify-content: center;
+    @include flex-horizental-center;
     padding: 2rem;
     background-color: $blue-100-60;
     border-radius: 15px;
 
     .butler-texts{
-      display: flex;
+      @include flex-vertical-center;
       flex-direction: column;
-      align-items: center;
 
       h2{
         font-size: 3.8rem;
@@ -193,8 +191,7 @@
 
         .faq-elements{
           height: 65px;
-          display: flex;
-          justify-content: space-between;
+          @include flex-between;
           align-items: flex-start;
           border: 1px solid $tackbutler-paars;
           border-radius: 6px;
@@ -226,11 +223,9 @@
             justify-content: flex-end;
             width: 20%;
             .faq-show-btn{
-              outline: none;
-              border: none;
+              @include button-as-text;
               padding: 0;
               margin: 0;
-              background-color: transparent;
               font-weight: 300;
               color: $tackbutler-paars;
   
@@ -283,8 +278,7 @@
         }
 
         .comparisons{
-          display: flex;
-          justify-content: space-between;
+          @include flex-between;
           padding-top: 1.6rem;
 
           .surfable{
@@ -429,8 +423,7 @@
       padding: 0;
 
       .headings{
-        display: flex;
-        justify-content: space-between;
+        @include flex-between;
         align-items: center;
         margin: 1rem 0;
         padding: 0;

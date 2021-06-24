@@ -4,8 +4,7 @@
   padding-bottom: 8rem;
 
   .hero-texts{
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     justify-content: flex-end;
     padding-bottom: 1rem;
     padding-right: 1.1rem;
@@ -32,8 +31,7 @@
         width: 96%;
         padding: 1rem 0;
         padding-right: 5rem;
-        border: none;
-        outline: none;
+        @include button-as-text;
         border-bottom: 1px solid $headings-color;
         font-size: 20px;
         color: $paragraphs-color;
@@ -49,8 +47,7 @@
         position: absolute;
         right: 1.3rem;
         bottom: 3px;
-        outline: none;
-        border: none;
+        @include button-as-text;
         height: 58px;
         width: 58px;
         background-color: $orange;
@@ -292,8 +289,7 @@
   padding: 10rem 0;
 
   .software-row{
-    display: flex;
-    align-items: center;
+    @include flex-vertical-center;
 
     .software-desc{
       padding-left: 2rem;

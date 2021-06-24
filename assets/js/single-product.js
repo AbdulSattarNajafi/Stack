@@ -29,7 +29,6 @@
 
 // FAQ
 (function() {
-  const faqCards = document.querySelectorAll('.faq-container .faq-elements');
   const faqBtns = document.querySelectorAll('.faq-show-btn');
 
   faqBtns.forEach(faqBtn => {

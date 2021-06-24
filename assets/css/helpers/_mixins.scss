@@ -1,0 +1,38 @@
+@mixin button-as-text {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-between-vertivalCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-horizental-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}

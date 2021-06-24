@@ -20,17 +20,14 @@ footer{
   }
 
   #footer-links-container{
-    display: flex;
-    justify-content: space-between;
+    @include flex-between;
     padding: 0;
 
     .footer-links-container{
       width: 31%;
 
       .links-title{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-between-vertivalCenter;
         margin-bottom: .5rem;
 
         p{
@@ -45,9 +42,7 @@ footer{
 
         .show-footer-links{
           display: none;
-          outline: none;
-          border: none;
-          background-color: transparent;
+          @include button-as-text;
           color: $gray-400;
 
           .hide{

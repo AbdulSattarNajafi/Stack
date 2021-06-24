@@ -1,0 +1,107 @@
+.login-signup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 99999;
+  display: none;
+  transition: all .5s ease-out;
+
+  .forms-container{
+    @include flex-center-all;
+    height: 100%;
+
+    .log-forms{
+      background-color: $white;
+      border-radius: 15px;
+      max-width: 400px;
+      height: auto;
+      padding: 2rem;
+      padding-top: 1rem;
+      @include flex-between-vertivalCenter;
+      flex-direction: column;
+
+      .form-header{
+        text-align: center;
+
+        h1{
+          margin: 0;
+          font-size: 3rem;
+          font-weight: 300;
+        }
+
+        p{
+          font-size: 1.125rem;
+          line-height: 180%;
+          margin: 0;
+
+          .form-link{
+            color: $orange;
+            cursor: pointer;
+          }
+
+        }
+
+      }
+
+      .form-inputs{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 5rem;
+        input{
+          outline: none;
+          width: 100%;
+          background-color: rgba(196, 196, 196, 0.1);
+          border: 1px solid #E5E5E5;
+          border-radius: 15px;
+          margin-bottom: 1.4rem;
+          font-size: 1.125rem;
+          line-height: 180%;
+          padding: 5px 15px;
+          transition: all .4s ease;
+          &::placeholder{
+            color: $black;
+          }
+          &:focus{
+            background-color: transparent;
+            border-color: $orange;
+          }
+        }
+        input[type= email] {
+          font-weight: bold;
+        }
+
+        .names-container{
+          @include flex-between;
+          input{
+            width: 48%;
+          }
+        }
+      }
+
+    }
+
+    //Sign up form
+    .sign-up-form{
+      display: none;
+    }
+
+  }
+
+}
+
+.active-login-signup{
+  display: block;
+  opacity: 1;
+  transition: all .5s ease-in;
+}
+
+@media (max-width: 575.98px) {
+  .login-signup .forms-container .log-forms{
+    width: 90%;
+    padding: 2rem 1rem;
+  }
+}

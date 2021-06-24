@@ -31,8 +31,7 @@
     margin-bottom: 3rem;
 
     .header-row{
-      display: flex;
-      align-items: center;
+      @include flex-vertical-center;
       width: 100%;
       .thead-data{
         width: 33.33%;
@@ -41,9 +40,7 @@
       }
 
       .add-product button{
-        border: none;
-        outline: none;
-        background-color: transparent;
+        @include button-as-text;
         font-size: 1.5rem;
         line-height: 30px;
         span i{
