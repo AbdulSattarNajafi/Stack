@@ -284,6 +284,100 @@
 }
 // End of mostUsed Section
 
+// Start of Stackbutler desc
+#stackbutler-desc{
+  padding: 4rem 0;
+}
+// End of Stackbutler desc
+
+#popular-software{
+  padding: 4rem 0;
+  background-color: $lichtpaars;
+
+  .heading{
+    position: relative;
+    img{
+      position: absolute;
+      left: -3rem;
+      top: -3rem;
+      z-index: 1;
+    }
+    h2{
+      position: relative;
+      z-index: 10;
+    }
+  }
+
+  .slider-container{
+    position: relative;
+    padding: 3rem 0 1rem 0;
+    overflow-x: hidden;
+
+    .slider-cards{
+      padding: 1.5rem;
+      background-color: $white;
+      border-radius: 15px;
+
+      p{
+        font-size: 11px;
+        color: $black-100;
+        line-height: 19px;
+      }
+
+      .task-management{
+        p{
+          display: inline-block;
+          background-color: $blue-100-60;
+          font-size: 11px;
+          color: $black-100;
+          line-height: 19px;
+          padding: 4px 15px;
+          border-radius: 13px;
+        }
+      }
+
+      .logos{
+        @include flex-between-vertivalCenter;
+        margin: 1rem 0;
+
+        .asana-logo{
+          margin: 0 2rem 0 1rem;
+        }
+
+        .asana-desc{
+          h4{
+            color: $black-100;
+            margin: 0 0 6px 0;
+          }
+          p{
+            font-size: 11px;
+            color: $black-100;
+            line-height: 19px;
+            margin: 0 0 8px 0;
+            .stars{
+              color: $yellow;
+              margin-right: 2px;
+            }
+          }
+        }
+
+      }
+
+      .texts{
+        padding-bottom: 3rem;
+      }
+
+      .btn-container{
+        display: flex;
+        justify-content: flex-end;
+      }
+
+    }
+
+  }
+
+}
+
 //Styling for Software Section
 #software{
   padding: 10rem 0;

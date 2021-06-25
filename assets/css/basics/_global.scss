@@ -107,6 +107,10 @@ ul{
   font-size: 1.25rem;
 }
 
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+  background-color: $orange;
+}
+
 @media (max-width: 575.98px) {
   h1{
     font-size: 3rem;

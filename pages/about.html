@@ -17,7 +17,7 @@
 
   <!-- Custom CSS link -->
   <link rel="stylesheet" href="./../assets/css/app.css">
-  <title>Comparison</title>
+  <title>About Stackbutler</title>
 </head>
 <body>
   
@@ -36,24 +36,17 @@
           <a href="#">Stack Butler</a>
         </div>
 
-        <div class="search-container">
-          <a href="#" class="logo">Stack Butler</a>
-          <input type="text" placeholder="Search products...">
-          <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
-        </div>
+          <ul class="nav-list">
+            <li class="logo-container">
+              <a href="#" class="logo">Stack Butler</a>
+              <button type="button" id="close-menu"><i class="fas fa-times"></i></button>
+            </li>
+            <li><a href="./../index.html">Home</a></li>
+            <li><a href="./single-product.html">Software</a></li>
+          </ul>
 
-        <ul class="nav-list">
-          <li class="logo-container">
-            <a href="#" class="logo logo-single-page">Stack Butler</a>
-            <button type="button" id="close-menu"><i class="fas fa-times"></i></button>
-          </li>
-          <li><a href="./../index.html">Home</a></li>
-          <li><a href="./single-product.html">Software</a></li>
-          <li class="login-btn"><button type="button" class="orange-btn-lg" id="btn-signin">Sign in</button></li>
-        </ul>
-
-        <div class="login-container single-product-none">
-          <button type="button" class="orange-btn-lg">Sign in</button>
+        <div class="login-container">
+          <button type="button" class="orange-btn-lg" id="btn-signin">Sign in</button>
         </div>
 
       </nav>
@@ -71,107 +64,102 @@
   <!-- Overlay -->
 
   <!-- Start of Hero Section -->
-  <div class="container hero-container" id="comparison-hero">
+  <div class="container hero-container" id="hero-about">
     <div class="row">
 
-      <div class="col-12 hero-texts">
-        <div class="hero-heading">
-          <img class="heading-img" src="./../assets/images/blue-logo-bg.png" alt="image">
-          <h1>Asana vs Wrike</h1>
-        </div>
-        <p>See this side-by-side comparison of Asana vs. Wrike based on preference data from user reviews. Asana rates 4.3/5 stars with 7,091 reviews.</p>
-        <p>By contrast, Wrike rates 4.2/5 stars with 1,406 reviews. Each product's score is calculated with real-time data from verified user reviews, to help you make the best choice between these two options, and decide which one is best for your business needs.</p>
+      <div class="col-12 hero-heading">
+        <img src="./../assets/images/blue-logo-bg.png" alt="image">
+        <h1>About Stack Butler</h1>
+      </div>
+
+    </div>
+
+      <div class="row">
+      <div class="col-lg-6 hero-texts">
+        <h2>Ready to serve</h2>
+        <p>Stackbutler is an independent platform that provides information about software products. By analyzing various data points on the internet, we try to paint the best possible picture of a product.</p>
+
+        <p>These data points contain: reviews from different comparison platforms, scores from different comparison platforms and a sentiment analysis taken from Google, Twitter and Facebook. We summarize all these scores in a Butler score. The goal of Stackbutler is to give the best possible picture of a product at a glance.</p>
+
+        <p>In addition, we provide information about product information, pricing, features, reviews, alternatives and comparisons with other software. Stackbutler is the place to find your new software tools.</p>
+      </div>
+
+      <div class="col-lg-6 hero-image">
+        <img class="img-fluid" src="./../assets/images/penguin.png" alt="image">
       </div>
 
     </div>
   </div>
   <!-- End of Hero Section -->
 
-  <!-- Start of Hero Comparison -->
-  <section id="comparison">
-    <div class="container">
+  <!-- Start of Mostused Section -->
+  <section id="about-stackbutler">
+    <div class="container p-0">
       <div class="row">
-
-        <div class="col-12" id="table-container">
-
-          <div class="header-row">
-            <div class="thead-data add-product">
-              <button type="button">
-                <span><i class="fas fa-plus-circle"></i></span>
-                Add product
-              </button>
-            </div>
-            <div class="thead-data asana">
-              <img class="img-fluid" src="./../assets/images/Asana_logo.png" alt="image">
-              <p>Asana</p>
-              <button type="button" class="orange-btn-lg">To product</button>
-            </div>
-            <div class="thead-data wrike">
-              <img class="img-fluid" src="./../assets/images/wrike-logo.png" alt="image">
-              <p>Wrike</p>
-              <button type="button" class="orange-btn-lg">To product</button>
-            </div>
-          </div>
-
-          <div class="body-row">
-            <div class="tbody-data">
-              <p>Star rating</p>
-            </div>
-            <div class="tbody-data middle">
-              <p>
-                <span class="stars"><i class="fas fa-star"></i></span>
-                <span class="stars"><i class="fas fa-star"></i></span>
-                <span class="stars"><i class="fas fa-star"></i></span>
-                <span class="stars"><i class="fas fa-star"></i></span>
-                <span class="stars"><i class="fas fa-star"></i></span> 
-                7,091 reviews
-              </p>
-            </div>
-            <div class="tbody-data"><p>
-              <span class="stars"><i class="fas fa-star"></i></span>
-              <span class="stars"><i class="fas fa-star"></i></span>
-              <span class="stars"><i class="fas fa-star"></i></span>
-              <span class="stars"><i class="fas fa-star"></i></span>
-              <span class="stars"><i class="fas fa-star"></i></span> 
-              1,200 reviews
-            </p></div>
-          </div>
-
-          <div class="body-row">
-            <div class="tbody-data">
-              <p>Market segments</p>
-            </div>
-            <div class="tbody-data middle">
-              <p>Small-Business</p>
-            </div>
-            <div class="tbody-data">
-              <p>Mid-Market</p>
-            </div>
-          </div>
-
-          <div class="body-row">
-            <div class="tbody-data">
-              <p>Entry level price</p>
-            </div>
-            <div class="tbody-data middle">
-              <p><span class="bold-weight">$0</span> user / month</p>
-            </div>
-            <div class="tbody-data">
-              <p><span class="bold-weight">$9.80</span> user/month</p>
-            </div>
-          </div>
-          
-
+        <div class="heading-container text-center">
+          <h2>The way Stack Butler works</h2>
         </div>
 
         <div class="col-12 p-0">
-          <h3 class="stackbutler-text noraml-weight">Compare Asana vs Wrike</h3>
-        </div>
+          <div class="row stacks-container">
 
+            <div class="col-lg-3 col-md-6 col-xs-12 stacks">
+              <img class="img-fluid" src="./../assets/images/start-up.png" alt="image">
+              <h4>With a start-up mentality</h4>
+              <p>No idea is too crazy to make business travel & expense easier for everyone. We invent, test and grow with you.</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-xs-12 stacks">
+              <img class="img-fluid" src="./../assets/images/customers.png" alt="image">
+              <h4>With love for customers</h4>
+              <p>Making your daily business a breeze is what motivates us. We develop user friendly platforms that you will love.</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-xs-12 stacks">
+              <img class="img-fluid" src="./../assets/images/technology.png" alt="image">
+              <h4>With innovative technology</h4>
+              <p>We only trust the best in class technology. By using Rydoo, you will always be ahead of the curve.</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-xs-12 stacks">
+              <img class="img-fluid" src="./../assets/images/great-team.png" alt="image">
+              <h4>With a great team</h4>
+              <p>Rydoo would not be here without the great teams behind it. Our people are our greatest asset and they will be your favorite contacts.</p>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <!-- End of Hero Comparison -->
+  <!-- End of Mostused Section -->
+  <!-- Start of Software Section -->
+  <section id="software">
+    <div class="container">
+      <div class="row software-row">
+        <div class="col-lg-5 p-0">
+          <img class="img-fluid" src="./../assets/images/undraw_review-2.png" alt="image">
+        </div>
+        <div class="col-lg-5 software-desc">
+
+          <div class="heading-container">
+            <div class="background-img">
+              <img class="img-fluid" src="./../assets/images/star-bg.png" alt="image">
+              <img class="img-fluid" src="./../assets/images/star-bg.png" alt="image">
+            </div>
+            <h2>Using software? <br>Write a review</h2>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="btn-container">
+            <button class="orange-btn-lg">Write a review</button>
+          </div>
+
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Software Section -->
 
   <!-- Start of Login and Sign up -->
   <section class="login-signup">
@@ -271,7 +259,7 @@
             </div>
             
             <ul>
-              <li><a href="./about.html">About</a></li>
+              <li><a href="#">About</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Jobs</a></li>
               <li><a href="#">Press</a></li>

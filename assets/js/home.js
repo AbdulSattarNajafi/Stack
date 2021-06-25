@@ -26,3 +26,28 @@
 
   });
 })();
+
+//Slider
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  dots:true,
+  autoplay:true,
+  margin:30,
+  dotsEach: true,
+  // autoplayHoverPause: true, When mouse over stop auto play
+  responsiveClass:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      767:{
+          items:2
+      },
+      1000:{
+          items:3
+      },
+      1400:{
+        items:4,
+    }
+  }
+});

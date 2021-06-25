@@ -1,0 +1,61 @@
+#hero-about{
+  padding: 6rem 0 4rem 0;
+
+  .hero-heading{
+    position: relative;
+    padding-bottom: 2rem;
+    img{
+      position: absolute;
+      left: -3rem;
+      top: -2.5rem;
+      z-index: -1;
+    }
+  }
+
+  .hero-image{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+}
+
+@media (max-width: 991.98px){
+  #hero-about{
+    .hero-image{
+      justify-content: center;
+      padding-top: 2rem;
+    }
+  }
+}
+
+@media (max-width: 575.98px){
+  #hero-about{
+    padding: 4rem 0;
+  }
+}
+
+// About Stackbutler
+#about-stackbutler{
+  padding: 4rem 0;
+  background-color: $blue-100;
+
+  .stacks-container{
+    padding: 3rem 0 0 0;
+
+    .stacks{
+      margin-bottom: 2rem;
+      h4{
+        font-size: 1.5rem;
+        color: $blue-900;
+        line-height: 29px;
+        margin: 1rem 0;
+      }
+      p{
+        margin: 0;
+        color: $blue-800;
+      }
+    }
+
+  }
+
+}

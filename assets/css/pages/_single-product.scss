@@ -106,16 +106,28 @@
   padding: 1rem 0 5rem 0;
 
   .products-lists-links{
+    position: relative;
     display: flex;
     flex-flow: row wrap;
-    padding: .4rem 0;
-    border-bottom: 1px solid $tackbutler-paars;
+    padding: 0;
+    &::after{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 9px;
+      width: 100%;
+      height: 1px;
+      background-color: $tackbutler-paars;
+    }
+    // border-bottom: 1px solid $tackbutler-paars;
 
     li{
       display: inline-block;
       margin-right: 1rem;
+      margin-bottom: 1rem;
 
       .product-link{
+        position: relative;
         padding: .6rem 0;
         font-size: 1.25rem;
         color: $headings-color;
@@ -124,12 +136,30 @@
 
         &:hover{
           color: $tackbutler-paars;
+          &::after{
+            content: '';
+            position: absolute;
+            left: -5px;
+            bottom: -1.5px;
+            width: 105%;
+            height: 2px;
+            background-color: $tackbutler-paars;
+          }
         }
 
       }
 
       .active{
         color: $tackbutler-paars;
+        &::after{
+          content: '';
+          position: absolute;
+          left: -5px;
+          bottom: -1.5px;
+          width: 105%;
+          height: 2px;
+          background-color: $tackbutler-paars;
+        }
       }
 
     }

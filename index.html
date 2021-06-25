@@ -8,13 +8,13 @@
   <!-- Google fonts link -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
   <!-- Bootstrap link -->
   <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.min.css">
-
   <!-- FontAwesome link -->
   <link rel="stylesheet" href="./vendors/fontawesome/css/all.css">
-
+  <!-- Owl Carousel links -->
+  <link rel="stylesheet" href="./vendors/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="./vendors/owl-carousel/owl.theme.default.min.css">
   <!-- Custom CSS link -->
   <link rel="stylesheet" href="./assets/css/app.css">
   <title>Home</title>
@@ -41,8 +41,42 @@
               <a href="#" class="logo">Stack Butler</a>
               <button type="button" id="close-menu"><i class="fas fa-times"></i></button>
             </li>
-            <li><a href="#">Home</a></li>
-            <li><a href="./pages/single-product.html">Software</a></li>
+            <li class="tablet-links"><a href="#">
+              <span class="nav-cions"><img src="./assets/images/developers.svg" alt="icon"></span> 
+              Developers</a></li>
+            <li class="tablet-links"><a href="#">
+              <span class="nav-cions"><img src="./assets/images/marketers.svg" alt="icon"></span> 
+              Marketeers</a></li>
+            <li class="tablet-links"><a href="#">
+              <span class="nav-cions"><img src="./assets/images/designers.svg" alt="icon"></span> 
+              Designers</a></li>
+            <li class="tablet-links"><a href="#">
+              <span class="nav-cions"><img src="./assets/images/managers.svg" alt="icon"></span> 
+              Managers</a></li>
+            <li class="tablet-links"><a href="#" class="orange-text">View all software →</a></li>
+            <li class="tablet-bottom-links">
+              <div class="tablet-links-container">
+                <ul class="tablet-links-list">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Faq</a></li>
+                  <li><a href="#">Help</a></li>
+                </ul>
+    
+                <ul  class="tablet-links-list">
+                  <li><a href="#">Sitemap</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy policy</a></li>
+                </ul>
+    
+              </div>
+              <div class="btn-container">
+                <button class="orange-btn-lg">Sign up</button>
+                <p>Existing user?<span> <a href="#">Sign in</a></span></p>
+              </div>
+            </li>
+            <li class="desktop-links"><a href="#">Home</a></li>
+            <li class="desktop-links"><a href="./pages/single-product.html">Software</a></li>
           </ul>
 
         <div class="login-container">
@@ -56,7 +90,6 @@
 
   <!-- Overlay -->
   <div id="menu-overlay"></div>
-  <div id="login-overlay"></div>
   <div class="scroll-up-container">
     <a href="#" id="scroll-up-btn">
       <i class="fas fa-chevron-up"></i>
@@ -754,6 +787,159 @@
     </div>
   </section>
   <!-- End of Mostused Section -->
+
+  <!-- Start of Stackbutler Description -->
+  <section id="stackbutler-desc">
+    <div class="container">
+      <div class="row">
+        <div class="heading text-center">
+          <h2>What is Stack Butler?</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Start of Stackbutler Description  -->
+
+  <!-- Start of Popular Software -->
+  <section id="popular-software">
+    <div class="container">
+      <div class="row" id="slider-row">
+
+        <div class="heading">
+          <img class="img-fluid" src="./assets/images/logo-bg.png" alt="image">
+          <h2>Popular software</h2>
+        </div>
+        <!-- owl-carousel owl-theme -->
+        <div class="col-12 slider-container owl-carousel owl-theme">
+
+        <!-- Slider Card 1 -->
+        <div class="slider-cards">
+          <div class="task-management">
+            <p>Task Management Software</p>
+          </div>
+          <div class="logos">
+            <div class="asana-logo">
+              <img class="img-fluid" src="./assets/images/Asana_logo.png" alt="Asana logo">
+            </div>
+            <div class="asana-desc">
+              <h4>Asana</h4>
+              <p>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                (212 Reviews)
+              </p>
+              <p>Entry level Price: <span class="stackbutler-text">0$ / month</span></p>
+            </div>
+          </div>
+          <div class="texts">
+            <p>Asana helps teams manage and coordinate their work by making plans, processes, and responsibilities clear. How do you position yourself against your competitors? Teams need a system to orchestrate their work. </p>
+          </div>
+          <div class="btn-container">
+            <button type="button" class="orange-btn-lg">Visit product</button>
+          </div>
+        </div>
+
+        <!-- Slider Card 2 -->
+        <div class="slider-cards">
+          <div class="task-management">
+            <p>Task Management Software</p>
+          </div>
+          <div class="logos">
+            <div class="asana-logo">
+              <img class="img-fluid" src="./assets/images/Asana_logo.png" alt="Asana logo">
+            </div>
+            <div class="asana-desc">
+              <h4>Asana</h4>
+              <p>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                (212 Reviews)
+              </p>
+              <p>Entry level Price: <span class="stackbutler-text">0$ / month</span></p>
+            </div>
+          </div>
+          <div class="texts">
+            <p>Asana helps teams manage and coordinate their work by making plans, processes, and responsibilities clear. How do you position yourself against your competitors? Teams need a system to orchestrate their work. </p>
+          </div>
+          <div class="btn-container">
+            <button type="button" class="orange-btn-lg">Visit product</button>
+          </div>
+        </div>
+
+        <!-- Slider Card 3 -->
+        <div class="slider-cards">
+          <div class="task-management">
+            <p>Task Management Software</p>
+          </div>
+          <div class="logos">
+            <div class="asana-logo">
+              <img class="img-fluid" src="./assets/images/Asana_logo.png" alt="Asana logo">
+            </div>
+            <div class="asana-desc">
+              <h4>Asana</h4>
+              <p>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                (212 Reviews)
+              </p>
+              <p>Entry level Price: <span class="stackbutler-text">0$ / month</span></p>
+            </div>
+          </div>
+          <div class="texts">
+            <p>Asana helps teams manage and coordinate their work by making plans, processes, and responsibilities clear. How do you position yourself against your competitors? Teams need a system to orchestrate their work. </p>
+          </div>
+          <div class="btn-container">
+            <button type="button" class="orange-btn-lg">Visit product</button>
+          </div>
+        </div>
+
+        <!-- Slider Card 4 -->
+        <div class="slider-cards">
+          <div class="task-management">
+            <p>Task Management Software</p>
+          </div>
+          <div class="logos">
+            <div class="asana-logo">
+              <img class="img-fluid" src="./assets/images/Asana_logo.png" alt="Asana logo">
+            </div>
+            <div class="asana-desc">
+              <h4>Asana</h4>
+              <p>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                <span class="stars"><i class="fas fa-star"></i></span>
+                (212 Reviews)
+              </p>
+              <p>Entry level Price: <span class="stackbutler-text">0$ / month</span></p>
+            </div>
+          </div>
+          <div class="texts">
+            <p>Asana helps teams manage and coordinate their work by making plans, processes, and responsibilities clear. How do you position yourself against your competitors? Teams need a system to orchestrate their work. </p>
+          </div>
+          <div class="btn-container">
+            <button type="button" class="orange-btn-lg">Visit product</button>
+          </div>
+        </div>
+        <!-- End OF slider cards -->
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Start of Popular Software -->
+
   <!-- Start of Software Section -->
   <section id="software">
     <div class="container">
@@ -880,7 +1066,7 @@
             </div>
             
             <ul>
-              <li><a href="#">About</a></li>
+              <li><a href="./pages/about.html">About</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Jobs</a></li>
               <li><a href="#">Press</a></li>
@@ -907,8 +1093,14 @@
   </footer>
   <!-- End of Footer -->
 
+  <!-- Jquery CDN link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Bootstrap JS file -->
   <script src="./vendors/bootstrap/js/bootstrap.bundle.js"></script>
+
+  <!-- Owl Carousel JS files -->
+  <script src="./vendors/owl-carousel/owl.carousel.js"></script>
+  <script src="./vendors/owl-carousel/owl.carousel.min.js"></script>
 
   <!-- App JS file -->
   <script src="./assets/js/app.js"></script>

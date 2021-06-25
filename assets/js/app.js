@@ -1,27 +1,12 @@
 'use strict';
 
+const navbar = document.querySelector('.page-header');
 const openMenuBtn = document.querySelector('#opne-menu');
 const closeMenuBtn = document.querySelector('#close-menu');
 const navMenu = document.querySelector('.nav-list');
 const menuOverlay = document.querySelector('#menu-overlay');
 
-openMenuBtn.addEventListener('click', () => {
-  navMenu.classList.toggle('nav-list-active');
-  menuOverlay.style.display = 'block';
-});
-
-//closing the side menu
-closeMenuBtn.addEventListener('click', closeSideMenu);
-menuOverlay.addEventListener('click', closeSideMenu);
-
-//Function for close Menu
-function closeSideMenu() {
-  navMenu.classList.remove('nav-list-active');
-  menuOverlay.style.display = 'none';
-}
-
 //Fixed Navbar
-const navbar = document.querySelector('.page-header');
 const showTopLink = document.querySelector('.scroll-up-container');
 const heroContainer = document.querySelector('.hero-container');
 
@@ -40,6 +25,21 @@ window.addEventListener('scroll', function() {
     showTopLink.classList.remove('show-top-link');
   }
 });
+
+openMenuBtn.addEventListener('click', () => {
+  navMenu.classList.toggle('nav-list-active');
+  menuOverlay.style.display = 'block';
+});
+
+//closing the side menu
+closeMenuBtn.addEventListener('click', closeSideMenu);
+menuOverlay.addEventListener('click', closeSideMenu);
+
+//Function for close Menu
+function closeSideMenu() {
+  navMenu.classList.remove('nav-list-active');
+  menuOverlay.style.display = 'none';
+}
 
 
 // Login
