@@ -8,13 +8,10 @@
   <!-- Google fonts link -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
   <!-- Bootstrap link -->
   <link rel="stylesheet" href="./../vendors/bootstrap/css/bootstrap.min.css">
-
   <!-- FontAwesome link -->
   <link rel="stylesheet" href="./../vendors/fontawesome/css/all.css">
-
   <!-- Custom CSS link -->
   <link rel="stylesheet" href="./../assets/css/app.css">
   <title>Comparison</title>
@@ -45,7 +42,6 @@
         <ul class="nav-list">
           <li class="logo-container">
             <a href="#" class="logo logo-single-page">Stack Butler</a>
-            <button type="button" id="close-menu"><i class="fas fa-times"></i></button>
           </li>
           <li><a href="./../index.html">Home</a></li>
           <li><a href="./single-product.html">Software</a></li>
@@ -60,6 +56,57 @@
     </div>
   </header>
   <!-- End of Header -->
+
+  <!-- Start of Tablet menu -->
+  <div class="tablet-side-menu">
+
+    <div class="close-btn-container">
+      <h4 class="logo">Stack Butler</h4>
+      <button type="button" id="close-menu"><i class="fas fa-times"></i></button>
+    </div>
+
+    <div class="tablet-top-links">
+      <ul class="tablet-list-links">
+        <li class="tablet-links"><a href="#">
+          <span class="nav-cions"><img src="./../assets/images/developers.svg" alt="icon"></span> 
+          Developers</a></li>
+        <li class="tablet-links"><a href="#">
+          <span class="nav-cions"><img src="./../assets/images/marketers.svg" alt="icon"></span> 
+          Marketeers</a></li>
+        <li class="tablet-links"><a href="#">
+          <span class="nav-cions"><img src="./../assets/images/designers.svg" alt="icon"></span> 
+          Designers</a></li>
+        <li class="tablet-links"><a href="#">
+          <span class="nav-cions"><img src="./../assets/images/managers.svg" alt="icon"></span> 
+          Managers</a></li>
+        <li class="tablet-links"><a href="#" class="orange-text">View all software →</a></li>
+      </ul>
+    </div>
+
+    <div class="tablet-bottom-links">
+      <div class="tablet-links-container">
+        <ul class="tablet-links-list">
+          <li class="tablet-links"><a href="./../index.html">Home</a></li>
+          <li class="tablet-links"><a href="./about.html">About</a></li>
+          <li class="tablet-links"><a href="#">Faq</a></li>
+          <li class="tablet-links"><a href="#">Help</a></li>
+        </ul>
+
+        <ul  class="tablet-links-list">
+          <li class="tablet-links"><a href="#">Sitemap</a></li>
+          <li class="tablet-links"><a href="#">Terms</a></li>
+          <li class="tablet-links"><a href="#">Privacy policy</a></li>
+        </ul>
+
+      </div>
+      <div class="btn-container">
+        <button class="orange-btn-lg" id="signup-tablet">Sign up</button>
+        <p>Existing user?<span> <a id="login-tablet">Sign in</a></span></p>
+      </div>
+    </div>
+
+  </div>
+  <!-- End of Tablet menu -->
 
   <!-- Overlay -->
   <div id="menu-overlay"></div>

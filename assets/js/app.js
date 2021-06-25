@@ -3,7 +3,7 @@
 const navbar = document.querySelector('.page-header');
 const openMenuBtn = document.querySelector('#opne-menu');
 const closeMenuBtn = document.querySelector('#close-menu');
-const navMenu = document.querySelector('.nav-list');
+const navMenu = document.querySelector('.tablet-side-menu');
 const menuOverlay = document.querySelector('#menu-overlay');
 
 //Fixed Navbar
@@ -29,6 +29,7 @@ window.addEventListener('scroll', function() {
 openMenuBtn.addEventListener('click', () => {
   navMenu.classList.toggle('nav-list-active');
   menuOverlay.style.display = 'block';
+  document.body.style.overflowY = 'hidden';
 });
 
 //closing the side menu
@@ -39,36 +40,60 @@ menuOverlay.addEventListener('click', closeSideMenu);
 function closeSideMenu() {
   navMenu.classList.remove('nav-list-active');
   menuOverlay.style.display = 'none';
-}
-
+  document.body.style.overflowY = 'auto';
+};
 
 // Login
 (function(){
   const loginHomeBtn = document.querySelector('#btn-signin');
   const signupBtn = document.querySelector('#signup-btn');
+  const signupTabletBtn = document.querySelector('#signup-tablet');
+  const loginTabletBtn = document.querySelector('#login-tablet');
   const signinBtn = document.querySelector('#signin-btn');
+  const tabletLinks = document.querySelectorAll('.tablet-links');
 
   const formSignup = document.querySelector('.login-signup .sign-up-form');
   const formSignin = document.querySelector('.login-signup .signin-form');
   const loginContent = document.querySelector('.login-signup');
 
-  loginHomeBtn.addEventListener('click', () => {
-    loginContent.classList.add('active-login-signup');
-    document.body.style.overflow = 'hidden';
-    console.log('hihihi')
+  // display singin
+  loginHomeBtn.addEventListener('click', showSignin);
+  signupTabletBtn.addEventListener('click', () => {
+    showSignin();
+    SigninToSignup();
+    closeSideMenu();
+  });
+  loginTabletBtn.addEventListener('click', () => {
+    showSignin();
+    closeSideMenu();
+  });
+
+  tabletLinks.forEach(tabletLink => {
+    tabletLink.addEventListener('click', closeSideMenu);
   });
 
   //Signin to sign up
-  signupBtn.addEventListener('click', () => {
-    formSignin.style.display = 'none';
-    formSignup.style.display = 'block';
-  });
+  signupBtn.addEventListener('click', SigninToSignup);
 
   //Sign up to signin
-  signinBtn.addEventListener('click', () => {
+  signinBtn.addEventListener('click', signupToSignin);
+
+  // Show signin
+  function showSignin() {
+    loginContent.classList.add('active-login-signup');
+  };
+
+  //Signin to sign up
+  function SigninToSignup() {
+    formSignin.style.display = 'none';
+    formSignup.style.display = 'block';
+  };
+
+  //Sign up to signin
+  function signupToSignin() {
     formSignin.style.display = 'block';
     formSignup.style.display = 'none';
-  });
+  };
 
 })();
 

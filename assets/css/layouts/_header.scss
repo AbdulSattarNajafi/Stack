@@ -98,78 +98,6 @@ header{
         }
   
       }
-
-      //Links only for tablet and movile visible
-      .tablet-links{
-        padding: .4rem 0;
-        margin: 0;
-        margin-bottom: .4rem;
-        display: none;
-
-        a{
-          font-size: 1rem;
-          color: $headings-color;
-          line-height: 24px;
-          display: flex;
-          align-items: center;
-        }
-        .nav-cions{
-          margin-right: 1.1rem;
-          margin-top: -4px;
-        }
-        .orange-text{
-          color: $orange;
-          font-size: 1rem;
-          line-height: 14px;
-        }
-
-      }
-
-      .tablet-bottom-links{
-        width: 100%;
-        margin-top: 1.5rem;
-        padding: 1.5rem 0;
-        border-top: 2px solid #F9FAFB;
-        display: none;
-
-        .tablet-links-container{
-          @include flex-between;
-          .tablet-links-list{
-            width: 47%;
-            li{
-              margin: 0;
-              margin-bottom: .5rem;
-              a{
-                color: $headings-color;
-                font-size: 1rem;
-                line-height: 14px;
-              }
-            }
-          }
-        }
-
-        .btn-container{
-          text-align: center;
-          .orange-btn-lg{
-            display: block;
-            width: 80%;
-            margin: 1rem auto;
-          }
-          p{
-            font-size: 1rem;
-            line-height: 14px;
-            color: $headings-color;
-            a{
-              display: inline-block;
-              color: $orange;
-              font-size: 1rem;
-              line-height: 14px;
-            }
-          }
-        }
-
-      }
-      //End of Links only for tablet and movile visible
   
       .logo-container{
         margin-right: 4rem;
@@ -185,13 +113,6 @@ header{
 
         .logo-single-page{
           display: none;
-        }
-
-        #close-menu{
-          display: none;
-          @include button-as-text;
-          font-size: 1.6rem;
-          color: $gray-400;
         }
   
       }
@@ -222,13 +143,129 @@ header{
 
 }
 
+// Styling for Tablet Side menu
+.tablet-side-menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  width: 360px;
+  height: 100vh;
+  background-color: $white;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translate(-100%);
+  transition: all .6s ease;
+  overflow-y: auto;
+  z-index: 99999;
+
+  .close-btn-container{
+    @include flex-between;
+    align-items: center;
+    padding: 1rem;
+    .logo{
+      font-size: 1.25rem;
+      color: $headings-color;
+      font-weight: bold;
+      line-height: 24px;
+      margin: 0;
+    }
+    #close-menu{
+      @include button-as-text;
+      font-size: 1.5rem;
+      color: $gray-400;
+      font-weight: 300;
+    }
+  }
+
+  .tablet-top-links{
+    padding: 0 1rem 1.5rem 1rem;
+    .tablet-list-links{
+      li{
+        padding: .4rem 0;
+        margin: 0;
+        margin-top: .4rem;
+        a{
+          font-size: 1rem;
+          color: $headings-color;
+          font-weight: bold;
+          line-height: 24px;
+          display: flex;
+          align-items: center;
+          .nav-cions{
+            margin-right: 1.1rem;
+            margin-top: -4px;
+          }
+        }
+        .orange-text{
+          color: $orange;
+        }
+      }
+    }
+  }
+
+  .tablet-bottom-links{
+    border-top: 2px solid #F9FAFB;
+    padding: 1.5rem 1rem 1rem 1rem;
+
+    .tablet-links-container{
+      @include flex-between;
+      width: 100%;
+      .tablet-links-list{
+        width: 47%;
+        li{
+          margin: 0;
+          margin-bottom: .5rem;
+          a{
+            color: $headings-color;
+            font-size: 1rem;
+            font-weight: bold;
+            line-height: 14px;
+          }
+        }
+      }
+    }
+
+    .btn-container{
+      text-align: center;
+      .orange-btn-lg{
+        display: block;
+        width: 80%;
+        margin: 1rem auto;
+      }
+      p{
+        font-size: 1rem;
+        line-height: 14px;
+        color: $headings-color;
+        font-weight: bold;
+        a{
+          display: inline-block;
+          color: $orange;
+          font-size: 1rem;
+          font-weight: bold;
+          line-height: 14px;
+        }
+      }
+    }
+
+  }
+
+}
+
+//Class for Js
+.nav-list-active{
+  transform: translate(0%);
+  transition: all .6s ease;
+}
+// End Of Styling for Tablet Side menu
+
 @media (max-width: 991.98px) {
 
   header{
     
     .top-header{
-
       padding: .75rem 0;
+      @include flex-between;
 
       .toggle-menu-container{
         display: block;
@@ -243,66 +280,7 @@ header{
       }
 
       .nav-list{
-        position: fixed;
-        top: 0;
-        left: 0;
-        padding: 1rem 0;
-        width: 360px;
-        height: 100vh;
-        background-color: $white;
-        flex-direction: column;
-        align-items: flex-start;
-        transform: translate(-100%);
-        transition: all .6s ease;
-        overflow-y: auto;
-        z-index: 99999;
-
-        li{
-          width: 100%;
-        }
-
-        .desktop-links{
-          display: none;
-        }
-
-        .tablet-links{
-          display: block;
-        }
-
-        .tablet-bottom-links{
-          display: block;
-        }
-
-        .login-btn{
-          display: none;
-        }
-
-        .logo-container{
-          margin: 0;
-          padding: 1rem;
-          border-bottom: 1px solid $white;
-
-          .logo-single-page{
-            display: block;
-          }
-
-          #close-menu{
-            display: block;
-          }
-
-          .logo{
-            font-size: 1.6rem;
-            color: $headings-color;
-          }
-
-        }
-
-      }
-
-      //Class for Js
-      .nav-list-active{
-        transform: translate(0%);
-        transition: all .6s ease;
+        display: none;
       }
 
       .single-product-none{
@@ -323,11 +301,13 @@ header{
           font-size: 1.6rem;
         }
       }
-      .nav-list{
-        width: 320px;
-      }
     }
   }
+
+  .tablet-side-menu{
+    width: 320px;
+  }
+
 }
 
 //Menu ovelay
@@ -338,6 +318,6 @@ header{
   right: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.521);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 9999;
 }
