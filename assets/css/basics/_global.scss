@@ -25,10 +25,6 @@ body{
   margin: 0;
 }
 
-// .container{
-//   border: 1px solid blue;
-// }
-
 h1{
   font-size: 3.5rem;
   color: $headings-color;
@@ -75,13 +71,20 @@ ul{
 
 .orange-btn-lg{
   @include button-as-text;
+  border: 1px solid transparent;
   background-color: $orange;
   font-size: 1.25rem;
   font-weight: 500;
   color: $white;
   line-height: 25px;
   border-radius: 15px;
-  padding: 10px 49px;
+  padding: 9px 39px;
+  transition: all .4s ease;
+  &:hover{
+    border-color: $orange;
+    background-color: transparent;
+    color: $orange;
+  }
 }
 
 .orange-btn-outline{
@@ -92,7 +95,13 @@ ul{
   font-weight: 500;
   line-height: 25px;
   border-radius: 15px;
-  padding: 10px 49px;
+  padding: 9px 39px;
+  transition: all .4s ease;
+  &:hover{
+    border-color: transparent;
+    background-color: $orange;
+    color: $white;
+  }
 }
 
 .noraml-weight{

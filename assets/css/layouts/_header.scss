@@ -38,7 +38,7 @@ header{
       display: flex;
       .logo{
         font-size: 2rem;
-        color: $black;
+        color: $headings-color;
         font-weight: bold;
         line-height: 40px;
         padding:0;
@@ -95,6 +95,10 @@ header{
           color: $headings-color;
           line-height: 25px;
           padding: 6px 12px;
+          transition: all .3s ease;
+          &:hover{
+            color: $orange;
+          }
         }
   
       }
@@ -192,6 +196,10 @@ header{
           line-height: 24px;
           display: flex;
           align-items: center;
+          transition: all .3s ease-out;
+          &:hover{
+            color: $orange;
+          }
           .nav-cions{
             margin-right: 1.1rem;
             margin-top: -4px;
@@ -213,6 +221,9 @@ header{
       width: 100%;
       .tablet-links-list{
         width: 47%;
+        &:first-child{
+          padding-left: 2.2rem;
+        }
         li{
           margin: 0;
           margin-bottom: .5rem;
@@ -221,6 +232,10 @@ header{
             font-size: 1rem;
             font-weight: bold;
             line-height: 14px;
+            transition: all .3s ease;
+            &:hover{
+              color: $orange;
+            }
           }
         }
       }

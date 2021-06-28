@@ -106,25 +106,15 @@
   padding: 1rem 0 5rem 0;
 
   .products-lists-links{
-    position: relative;
     display: flex;
     flex-flow: row wrap;
     padding: 0;
-    &::after{
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 9px;
-      width: 100%;
-      height: 1px;
-      background-color: $tackbutler-paars;
-    }
-    // border-bottom: 1px solid $tackbutler-paars;
+    border-bottom: 1.5px solid $blue-100-60;
 
     li{
       display: inline-block;
       margin-right: 1rem;
-      margin-bottom: 1rem;
+      padding: 4px 0;
 
       .product-link{
         position: relative;
@@ -139,9 +129,9 @@
           &::after{
             content: '';
             position: absolute;
-            left: -5px;
-            bottom: -1.5px;
-            width: 105%;
+            left: 0;
+            bottom: -.5px;
+            width: 100%;
             height: 2px;
             background-color: $tackbutler-paars;
           }
@@ -154,9 +144,9 @@
         &::after{
           content: '';
           position: absolute;
-          left: -5px;
-          bottom: -1.5px;
-          width: 105%;
+          left: 0;
+          bottom: -.5px;
+          width: 100%;
           height: 2px;
           background-color: $tackbutler-paars;
         }
@@ -294,64 +284,6 @@
 
     }
 
-    #comparison{
-      padding: 5rem 0 0 0;
-      display: flex;
-      justify-content: flex-end;
-
-      .comparison-container{
-        width: 258px;
-        height: 804px;
-        background-color: $blue-100-60;
-        border-radius: 15px;
-        padding: 2rem .75rem;
-
-        h3{
-          color: $tackbutler-paars;
-          text-align: center;
-        }
-
-        .comparisons{
-          @include flex-between;
-          padding-top: 1.6rem;
-
-          .surfable{
-            text-align: center;
-            p{
-              font-size: 1.25rem;
-              color: $headings-color;
-              line-height: 25px;
-              margin-top: 1rem;
-            }
-          }
-
-          .vs{
-            text-align: center;
-            margin-top: 1rem;
-            p{
-              font-size: 1.5rem;
-              color: $headings-color;
-              font-weight: bold;
-              line-height: 30px;
-            }
-          }
-
-          .asana{
-            text-align: center;
-            p{
-              font-size: 1.25rem;
-              color: $headings-color;
-              line-height: 25px;
-              margin-top: 1.87rem;
-            }
-          }
-
-        }
-
-      }
-
-    }
-
   }
 
   //Styling for Product-price
@@ -474,19 +406,8 @@
 
     }
 
-    #empty-review-container{
-      padding: 6.5rem 0 0 0;
-      display: flex;
-      justify-content: flex-end;
-
-      .empty-review{
-        background-color: $blue-100-60;
-        border-radius: 15px;
-        padding: 2rem;
-        width: 258px;
-        height: 380px;
-      }
-
+    .reviews-compare{
+      padding-top: 6.5rem;
     }
 
   }
@@ -510,22 +431,13 @@
       }
 
       .alter-cards-container{
-        padding: 1rem 0;
+        padding: 1rem 0 0 0;
       }
 
     }
 
-    #empty-alternatives-container{
-      padding: 6rem 0 0 0;
-      display: flex;
-      justify-content: flex-end;
-      .empty-alternatives{
-        background-color: $blue-100-60;
-        border-radius: 15px;
-        padding: 2rem;
-        width: 258px;
-        height: 380px;
-      }
+    .alternative-compare{
+      padding-top: 6rem;
     }
 
   }
@@ -554,14 +466,6 @@
 }
 
 @media (max-width: 991.98px) {
-  #products .information #comparison{
-    padding-top: 2rem;
-    .comparison-container{
-      width: 100%;
-      height: auto;
-      padding: 2rem 3rem;
-    }
-  }
 
   #products{
     .information{
@@ -578,23 +482,12 @@
     }
   }
 
-  #products .pricing #empty-card-container,
-  #products .feature #empty-feature-container{
-    padding: 2rem 0 0 0;
+  #products .reviews .reviews-compare{
+    padding-top: 2rem;
   }
 
-  #products .reviews #empty-review-container{
-    padding: 1rem 0 0 0;
-    .empty-review{
-      width: 100%;
-    }
-  }
-
-  #products .alternatives #empty-alternatives-container{
-    padding: 1rem 0 0 0;
-    .empty-alternatives{
-      width: 100%;
-    }
+  #products .alternatives .alternative-compare{
+    padding-top: 2rem;
   }
 }
 
@@ -610,10 +503,6 @@
         .active-faq{
           height: auto;
         }
-      }
-
-      #comparison .comparison-container{
-        padding: 2rem;
       }
 
     }
@@ -636,10 +525,6 @@
         .texts-container h4{
           font-size: 1.2rem;
         }
-      }
-
-      #comparison .comparison-container{
-        padding: 1rem;
       }
 
     }
