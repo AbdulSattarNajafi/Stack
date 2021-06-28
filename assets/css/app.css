@@ -722,7 +722,7 @@ footer #footer-links-container .footer-links-container .links-title {
 footer #footer-links-container .footer-links-container .links-title p {
   text-transform: uppercase;
   font-size: .875rem;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   color: #9CA3AF;
   line-height: 20px;
@@ -753,7 +753,7 @@ footer #footer-links-container .footer-links-container ul li:last-child {
 
 footer #footer-links-container .footer-links-container ul li a {
   font-size: 1rem;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   color: #6B7280;
   line-height: 24px;
 }
@@ -1171,7 +1171,7 @@ footer #social-icons-container .social-icons-linkslist li a {
 #hero-section .hero-texts .search-container button {
   position: absolute;
   right: 1.3rem;
-  bottom: 3px;
+  bottom: 10px;
   outline: none;
   border: none;
   -webkit-box-shadow: none;
@@ -1340,12 +1340,18 @@ footer #social-icons-container .social-icons-linkslist li a {
 }
 
 #mostused #software-result .tabs-content .all-links-container {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-top: .8rem;
-  padding-left: 3.6rem;
+  padding-right: 160px;
 }
 
 #mostused #software-result .tabs-content .all-links-container a {
+  padding: 3px 10px;
   font-size: 1.125rem;
   color: #8181DA;
   font-weight: 500;
@@ -1358,6 +1364,12 @@ footer #social-icons-container .social-icons-linkslist li a {
 
 #mostused #software-result .active-content {
   display: block;
+}
+
+@media (max-width: 1199.98px) {
+  #mostused #software-result .tabs-content .all-links-container {
+    padding-right: 54px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -1376,7 +1388,10 @@ footer #social-icons-container .social-icons-linkslist li a {
             justify-content: center;
   }
   #mostused #software-result .tabs-content .all-links-container {
-    padding-left: 0;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1990,15 +2005,15 @@ footer #social-icons-container .social-icons-linkslist li a {
 }
 
 #products .information #overview .surfable-images {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  display: -ms-grid;
+  display: grid;
+  gap: 1.4rem;
+  -ms-grid-columns: (minmax(150px, max-content))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, -webkit-max-content));
+      grid-template-columns: repeat(auto-fit, minmax(150px, max-content));
+  grid-auto-rows: auto;
   padding: 1rem 0;
-  margin-bottom: 3.5rem;
+  margin-bottom: 3rem;
 }
 
 #products .information #overview .faq-container {
@@ -2033,6 +2048,7 @@ footer #social-icons-container .social-icons-linkslist li a {
   font-size: 1.5rem;
   line-height: 30px;
   color: #414548;
+  font-weight: 500;
   margin-bottom: 1rem;
 }
 
@@ -2077,7 +2093,7 @@ footer #social-icons-container .social-icons-linkslist li a {
   transition: all .5s ease;
 }
 
-#products .information #overview .faq-container .active-faq h4 {
+#products .information #overview .faq-container .active-faq .texts-container h4 {
   color: #8181DA;
   margin-bottom: 7px;
 }
@@ -2342,6 +2358,15 @@ footer #social-icons-container .social-icons-linkslist li a {
   display: flex;
 }
 
+@media (max-width: 1199.98px) {
+  #products .information #overview .faq-container .faq-elements {
+    height: 94px;
+  }
+  #products .information #overview .faq-container .active-faq {
+    height: auto;
+  }
+}
+
 @media (max-width: 991.98px) {
   #products .information #comparison {
     padding-top: 2rem;
@@ -2350,6 +2375,12 @@ footer #social-icons-container .social-icons-linkslist li a {
     width: 100%;
     height: auto;
     padding: 2rem 3rem;
+  }
+  #products .information #overview .faq-container .faq-elements {
+    height: 65px;
+  }
+  #products .information #overview .faq-container .active-faq {
+    height: auto;
   }
   #products .pricing #empty-card-container,
   #products .feature #empty-feature-container {
@@ -2372,6 +2403,9 @@ footer #social-icons-container .social-icons-linkslist li a {
 @media (max-width: 767.98px) {
   #products .information #overview .faq-container .faq-elements {
     height: 98px;
+  }
+  #products .information #overview .faq-container .active-faq {
+    height: auto;
   }
   #products .information #comparison .comparison-container {
     padding: 2rem;

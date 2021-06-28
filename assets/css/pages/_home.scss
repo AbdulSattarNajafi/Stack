@@ -46,7 +46,7 @@
       button{
         position: absolute;
         right: 1.3rem;
-        bottom: 3px;
+        bottom: 10px;
         @include button-as-text;
         height: 58px;
         width: 58px;
@@ -217,11 +217,13 @@
       }
 
       .all-links-container{
-        text-align: center;
+        display: flex;
+        justify-content: flex-end;
         margin-top: .8rem;
-        padding-left: 3.6rem;
+        padding-right: 160px;
 
         a{
+          padding: 3px 10px;
           font-size: 1.125rem;
           color: $tackbutler-paars;
           font-weight: 500;
@@ -245,6 +247,12 @@
 
 }
 
+@media (max-width: 1199.98px) {
+  #mostused #software-result .tabs-content .all-links-container{
+    padding-right: 54px;
+  }
+}
+
 @media (max-width: 991.98px) {
 
   #mostused{
@@ -264,7 +272,8 @@
         }
 
         .all-links-container{
-          padding-left: 0;
+          padding: 0;
+          justify-content: center;
         }
 
       }

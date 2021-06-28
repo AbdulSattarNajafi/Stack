@@ -210,10 +210,12 @@
       }
 
       .surfable-images{
-        display: flex;
-        flex-flow: row wrap;
+        display: grid;
+        gap: 1.4rem;
+        grid-template-columns: repeat(auto-fit, minmax(150px, max-content));
+        grid-auto-rows: auto;
         padding: 1rem 0;
-        margin-bottom: 3.5rem;
+        margin-bottom: 3rem;
       }
 
       .faq-container{
@@ -237,6 +239,7 @@
               font-size: 1.5rem;
               line-height: 30px;
               color: $headings-color;
+              font-weight: 500;
               margin-bottom: 1rem;
             }
   
@@ -272,7 +275,8 @@
           align-items: center;
           height: auto;
           transition: all .5s ease;
-          h4{
+
+          .texts-container h4{
             color: $tackbutler-paars;
             margin-bottom: 7px;
           }
@@ -532,6 +536,23 @@
 
 }
 
+@media (max-width: 1199.98px) {
+  #products{
+    .information{
+
+      #overview .faq-container{
+        .faq-elements{
+          height: 94px;
+        }
+        .active-faq{
+          height: auto;
+        }
+      } 
+
+    }
+  }
+}
+
 @media (max-width: 991.98px) {
   #products .information #comparison{
     padding-top: 2rem;
@@ -539,6 +560,21 @@
       width: 100%;
       height: auto;
       padding: 2rem 3rem;
+    }
+  }
+
+  #products{
+    .information{
+
+      #overview .faq-container{
+        .faq-elements{
+          height: 65px;
+        }
+        .active-faq{
+          height: auto;
+        }
+      } 
+
     }
   }
 
@@ -567,8 +603,13 @@
 
 
     .information{
-      #overview .faq-container .faq-elements{
-        height: 98px;
+      #overview .faq-container{
+        .faq-elements{
+          height: 98px;
+        }
+        .active-faq{
+          height: auto;
+        }
       }
 
       #comparison .comparison-container{
